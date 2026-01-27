@@ -1,5 +1,7 @@
 * {
     --szurke: #3d3c3c;
+    --card-bg: #1b1a1a;
+    --card-text-all: #b0a0ff;
     /* var(--szurke); */
     /* Majd ide jön a többi, *ha* lesz */
 
@@ -24,21 +26,35 @@
     background-image: url("../img/try1.jpg");
 }
 
-#rolunk > * {
+#rolunk>* {
     position: relative;
     z-index: 1;
 }
 
 .card {
-    scale: 1.05;
+    scale: 0.85;
     margin: 0 1rem;
+    background-color: var(--card-bg);
+    color: var(--card-text-all);
+    border: 0.35rem solid #302f2f;
+    border-radius: 0.6rem;
+
 }
 
-#aadam, #bzoli, #htomi, #karon {
+.card-img-top {
+    height: auto;}
+
+#aadam,
+#bzoli,
+#htomi,
+#karon {
     position: relative;
     transition: transform 0.235s ease-in-out;
 }
 
-#aadam:hover, #bzoli:hover, #htomi:hover, #karon:hover {
+#aadam:hover,
+#bzoli:hover,
+#htomi:hover,
+#karon:hover {
     transform: translateY(-20px);
 }
