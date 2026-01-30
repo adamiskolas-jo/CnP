@@ -1,0 +1,31 @@
+* {
+    --nav-color: rgba(27, 26, 26, 0.775);
+    --nav-color-hover: rgba(27, 26, 26, 1);
+}
+
+
+nav {
+    background-color: var(--nav-color);
+    position: sticky;
+    z-index: 2000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav:hover {
+    background-color: var(--nav-color-hover);
+} 
+
+.nav-link-container {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 1.25rem;
+    right: 2rem;
+    margin-left: 3rem;
+  
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
