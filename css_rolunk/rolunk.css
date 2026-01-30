@@ -1,0 +1,60 @@
+* {
+    --szurke: #3d3c3c;
+    --card-bg: #1b1a1a;
+    --card-text-all: #b0a0ff;
+    /* var(--szurke); */
+    /* Majd ide jön a többi, *ha* lesz */
+
+}
+
+#rolunk {
+    position: relative;
+    overflow: hidden;
+    border-bottom: var(--szurke) solid 1px;
+    top: 0
+}
+
+#rolunk::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    filter: blur(15px);
+    z-index: 0;
+    transform: scale(1.05);
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/try1.jpg");
+}
+
+#rolunk>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    scale: 0.85;
+    margin: 0 1rem;
+    background-color: var(--card-bg);
+    color: var(--card-text-all);
+    border: 0.35rem solid #302f2f;
+    border-radius: 0.6rem;
+
+}
+
+.card-img-top {
+    height: auto;}
+
+#aadam,
+#bzoli,
+#htomi,
+#karon {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#aadam:hover,
+#bzoli:hover,
+#htomi:hover,
+#karon:hover {
+    scale: 0.9;
+}
