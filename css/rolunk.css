@@ -18,7 +18,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    filter: blur(12px);
+    filter: blur(15px);
     z-index: 0;
     transform: scale(1.05);
     background-size: cover;
@@ -49,13 +49,12 @@
 #htomi,
 #karon {
     position: relative;
-    transition: all 0.235s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #aadam:hover,
 #bzoli:hover,
 #htomi:hover,
 #karon:hover {
-    transform: translateY(-30px);
     scale: 0.9;
 }
