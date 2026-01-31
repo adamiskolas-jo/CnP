@@ -1,0 +1,66 @@
+* {
+    --szurke: #3d3c3c;
+    --card-bg: #1b1a1a;
+    --card-text-all: #b0a0ff;
+    /* ezek "lekérése" var(--szurke); */
+}
+
+body {
+/*background: #FF0004;
+background: linear-gradient(171deg,rgba(255, 0, 4, 1) 0%, rgba(36, 0, 0, 1) 50%, rgba(255, 0, 4, 1) 100%);*/
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url(../projektek_img/istockphoto-805086280-612x612.png)
+}
+
+#rolunk {
+    position: relative;
+    overflow: hidden;
+    border-bottom: var(--szurke) solid 1px;
+    top: 0
+}
+
+#rolunk::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    filter: blur(15px);
+    z-index: 0;
+    transform: scale(1.05);
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/try1.jpg");
+}
+
+#rolunk>* {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    scale: 0.85;
+    margin: 0 1rem;
+    background-color: var(--card-bg);
+    color: var(--card-text-all);
+    border: 0.35rem solid #302f2f;
+    border-radius: 0.6rem;
+
+}
+
+.card-img-top {
+    height: auto;}
+
+#aadam,
+#bzoli,
+#htomi,
+#karon {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#aadam:hover,
+#bzoli:hover,
+#htomi:hover,
+#karon:hover {
+    scale: 0.9;
+}
