@@ -58,7 +58,7 @@ canvas {
     background-color: var(--card-bg);
     color: var(--card-text-all);
     border: 0.35rem solid #302f2f;
-    border-radius: 0.6rem;
+    border-radius: 1rem;
 
 }
 
@@ -71,11 +71,56 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+
 }
 
-.card-rarity * {
-    color: var(--card-text-all);
+.card-rarity-upper-box {
+    width: 55%;
+    height: 68%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #f8f8ff
 }
+
+.card-legendary {
+    background: #edc54c;
+    background: linear-gradient(55deg, rgb(248, 238, 173) 20%, rgba(255, 220, 100, 1) 50%, rgba(255, 185, 40, 1) 80%, rgba(230, 150, 20, 1) 100%);
+
+
+}
+
+.card-hard {
+    background: #c6b8fc;
+    background: linear-gradient(55deg, rgba(198, 184, 252, 1) 24%, rgba(130, 69, 163, 1) 79%, rgba(109, 39, 156, 1) 100%);
+
+}
+
+.card-medium {
+    background: #8FF7B0;
+background: linear-gradient(55deg, rgba(173, 216, 255, 1), rgba(135, 206, 250, 1), rgba(100, 149, 237, 1), rgba(138, 43, 226, 1));
+
+
+
+    /*  background: #94fff3;
+    background: linear-gradient(90deg, rgba(148, 255, 243, 1) 0%, rgba(194, 200, 255, 1) 70%, rgba(130, 99, 255, 1) 100%); */
+}
+
+.card-easy {
+    background: #f3f5bc;
+    background: linear-gradient(90deg, rgba(243, 245, 188, 1) 0%, rgba(191, 242, 165, 1) 48%, rgba(143, 247, 176, 1) 100%);
+
+}
+
+
+
 
 #aadam,
 #bzoli,
