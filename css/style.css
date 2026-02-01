@@ -19,7 +19,13 @@ body {
     /* background-image: url(../img/istockphoto-805086280-612x612.png); */
     background-color: #3b414b;
      overflow-x: hidden;
-    padding-top: 70px;
+    padding-top: 100px;
+}
+
+.centered-italic-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: italic;
 }
 
 .navbar {
@@ -101,16 +107,15 @@ canvas {
     margin-bottom: 20rem;
 }
 */
-/* #rolunk alap átmenet: body → rólunk */
-#rolunk {
+
+#csapat {
     position: relative;
     overflow: visible;
     border-top: 0.05rem solid #302f2f;
-    background-color: #2a2f36; /* alap szín a kártyákhoz */
+    background-color: #2a2f36;
 }
 
-/* átmenet a body színéből */
-#rolunk::before {
+#csapat::before {
     content: "";
     position: absolute;
     top: -150px;
@@ -121,27 +126,26 @@ canvas {
     z-index: -1;
 }
 
-/* árnyalat a #rolunk szekció kártyáihoz */
-#rolunk::after {
+#csapat::after {
     content: "";
     position: absolute;
-    top: 0;          /* csak a szekció tetejétől induljon */
+    top: 0;       
     left: 0;
     width: 100%;
-    height: 100%;    /* egész szekció magasság */
+    height: 100%;   
     background: linear-gradient(to bottom, rgba(42, 47, 54, 0.6) 0%, rgba(42, 47, 54, 0.3) 100%);
-    z-index: 0;      /* kártyák mögött maradjon */
+    z-index: 0;     
 }
 
-#rolunk > * {
+#csapat > * {
     position: relative;
-    z-index: 1; /* kártyák és tartalom felül */
+    z-index: 1; 
 }
 
 
 
 /*
-#rolunk::before {
+#csapat::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -153,7 +157,7 @@ canvas {
     background-image: url("../img/try1.jpg");
 }
 
-#rolunk>* {
+#csapat>* {
     position: relative;
     z-index: 1;
 }
@@ -243,4 +247,9 @@ footer {
 
 .footer-bg {
     background-color: #2a2f36;
+}
+
+
+#csapat {
+    padding-top: 8rem;
 }
