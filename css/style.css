@@ -1,7 +1,13 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
     --szurke: #3d3c3c;
     --card-bg: #1b1a1a;
     --card-text-all: #b0a0ff;
+    --nav-color: rgba(27, 26, 26, 0.775);
+    --nav-color-hover: rgba(27, 26, 26, 1);
     /* ezek "lekérése" var(--szurke); */
 }
 
@@ -105,7 +111,7 @@ canvas {
 
 .card-medium {
     background: #8FF7B0;
-background: linear-gradient(55deg, rgba(173, 216, 255, 1), rgba(135, 206, 250, 1), rgba(100, 149, 237, 1), rgba(138, 43, 226, 1));
+    background: linear-gradient(55deg, rgba(173, 216, 255, 1), rgba(135, 206, 250, 1), rgba(100, 149, 237, 1), rgba(138, 43, 226, 1));
 
 
 
@@ -118,9 +124,6 @@ background: linear-gradient(55deg, rgba(173, 216, 255, 1), rgba(135, 206, 250, 1
     background: linear-gradient(90deg, rgba(243, 245, 188, 1) 0%, rgba(191, 242, 165, 1) 48%, rgba(143, 247, 176, 1) 100%);
 
 }
-
-
-
 
 #aadam,
 #bzoli,
@@ -137,13 +140,12 @@ background: linear-gradient(55deg, rgba(173, 216, 255, 1), rgba(135, 206, 250, 1
     scale: 0.9;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.projects-card {
+    transition: all 0.3s ease-in-out;
+}
 
-    --nav-color: rgba(27, 26, 26, 0.775);
-    --nav-color-hover: rgba(27, 26, 26, 1);
+.projects-card:hover {
+    scale: 0.9;
 }
 
 body {
@@ -200,15 +202,16 @@ nav.navbar:hover {
     font-size: 1.1rem;
 }
 
-.nav-left img{
+.nav-left img {
     height: 40px;
     border-radius: 0.5rem;
     margin-right: 0.5rem;
 }
-.nav-left a{
-    color:white;
+
+.nav-left a {
+    color: white;
     text-decoration: none;
-    display: flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
 
