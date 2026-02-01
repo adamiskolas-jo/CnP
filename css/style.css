@@ -239,3 +239,7 @@ canvas {
 footer {
     border-radius: 1rem 1rem 0 0;
 }
+
+.footer-bg {
+    background-color: #2a2f36;
+}
