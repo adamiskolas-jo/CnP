@@ -1,18 +1,16 @@
-#foresz {
-    height: 95vh;
-    width: 95vw;
-    filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.2);
-}
+#kezdolap {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
 
-#foresz img {
-    width: 99vw;
-    height: 96vh;
+    background: linear-gradient(180deg,
+            #434a55 0%,
+            #3b414b 60%,
+            #3b414b 100%);
 }
 
 #szovegresz {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 2rem;
-    height: 5rem;
     width: 26rem;
 }
