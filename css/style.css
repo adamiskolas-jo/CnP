@@ -108,6 +108,23 @@ canvas {
 }
 */
 
+#kezdolap {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(180deg,
+            #434a55 0%,
+            #3b414b 60%,
+            #3b414b 100%);
+}
+
+#szovegresz {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+    width: 26rem;
+}
+
 #csapat {
     position: relative;
     overflow: visible;
