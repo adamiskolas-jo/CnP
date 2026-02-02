@@ -9,12 +9,25 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/rolunk-projektek.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<!-- NAVBAR IDE -->
-<!-- NAVBAR IDE -->
+<nav class="navbar py-2 px-4">
 
+    <div class="nav-left">
+        <a href="#"><img src="../img/icon.svg" alt="Commit & Pray logó">
+            <h2>Commit & Pray</h2>
+        </a>
+    </div>
+
+    <div class="nav-right">
+        <a href="#kezdolap">Kezdőlap</a>
+        <a href="#projektek">Projektek</a>
+        <a href="#csapat">Csapat</a>
+        <a href="#rolunk">Rólunk</a>
+    </div>
+
+</nav>
 
 <body>
 
@@ -26,10 +39,12 @@
     <section class="container p-3" id="projektek">
 
         <div class="row">
-
+            <div class="centered-italic-text text-white">
+                <h1>Projektjeink</h1>
+            </div>
             <div class="col-12 col-md-6 col-lg-3">
 
-                <div class="card">
+                <div class="card projects-card">
                     <div class="card-rarity card-medium">
                         <div class="card-rarity-upper-box">
                             <h5>Közepes nehézségű<br>feladat</h5>
@@ -46,7 +61,8 @@
 
                         <h4 class="card-title text-decoration-underline fst-italic my-1">Feladat elkészítői:</h4>
 
-                        <p class="card-text mx-3 mt-1">Angelo Ádám,<br>Bánhegyi Zoltán,<br>Herczku Tamás,<br>Kovács Áron</p>
+                        <p class="card-text mx-3 mt-1">Angelo Ádám,<br>Bánhegyi Zoltán,<br>Herczku Tamás,<br>Kovács Áron
+                        </p>
                         <!--<a href="#" class="btn btn-danger">Weboldal</a>-->
                     </div>
                 </div>
@@ -58,9 +74,12 @@
 
 
 
-    <section id="rolunk" class="container-fluid mb-3 finisher-header">
+    <section id="csapat" class="container-fluid">
         <div class="container p-2">
             <div class="row">
+                <div class="centered-italic-text text-white">
+                    <h1>Csapatunk:</h1>
+                </div>
                 <div class="col-0 col-md-1">
                 </div>
                 <div class="col-12 col-md-5">
@@ -79,7 +98,7 @@
                         <img src="../img/placeholder.png" class="card-img-top" alt="Placeholder Kép">
                         <div class="card-body">
                             <h5 class="card-name">Bánhegyi Zoltán</h5>
-                            <p class="card-rank">Csapattag</p>
+                            <p class="card-rank">Slacker</p>
                             <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
                         </div>
                     </div>
@@ -95,7 +114,7 @@
                         <img src="../img/placeholder.png" class="card-img-top" alt="Placeholder Kép">
                         <div class="card-body">
                             <h5 class="card-name">Herczku Tamás</h5>
-                            <p class="card-rank">Csapattag</p>
+                            <p class="card-rank">HR - Humánerőforrás-menedzsment</p>
                             <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
                         </div>
                     </div>
@@ -115,6 +134,64 @@
             </div>
         </div>
     </section>
+
+    <div class="footer-bg">
+        <footer id="rolunk" class="container-fluid bg-dark text-white py-5">
+            <div class="container">
+                <div class="row gy-4 align-items-start">
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <h4 class="fw-bold mb-2">Commit & Pray</h4>
+                        <p class="fst-italic text-info mb-2">
+                            Pray, Peace, Protect, Commit, Enter
+                        </p>
+                        <p class="small text-secondary mb-3">
+                            A csapatunk hisz abban, hogy a lehető legjobb módon tudjuk elvégezni a csapat
+                            projektjeinket.
+                        </p>
+                        <a href="https://github.com/adamiskolas-jo/CnP/" target="_blank"
+                            class="text-decoration-none text-info fw-semibold">
+                            🔗 GitHub - Commit & Pray
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+                        <div class="p-4 rounded-4 bg-black bg-opacity-25 text-center text-md-start"
+                            style="max-width: 420px; width: 100%;">
+                            <div class="row align-items-start">
+                                <div class="col-6 pe-3">
+                                    <h6 class="fw-bold text-info mb-2">Csapat</h6>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>Angelo Ádám</li>
+                                        <li>Bánhegyi Zoltán</li>
+                                        <li>Herczku Tamás</li>
+                                        <li>Kovács Áron</li>
+                                    </ul>
+                                </div>
+                                <div class="col-1 d-flex justify-content-center">
+                                    <div class="h-100 border-start border-secondary opacity-50"></div>
+                                </div>
+                                <div class="col-5 ps-3">
+                                    <h6 class="fw-bold text-info mb-2">Partnerek</h6>
+                                    <ul class="list-unstyled small mb-0">
+                                        <li>
+                                            <a href="#" class="text-white text-decoration-none">
+                                                IT Titans
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-secondary my-4">
+                <div class="row">
+                    <div class="col-12 text-center small text-secondary">
+                        © 2026 Commit & Pray - Built with passion & precision.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

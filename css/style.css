@@ -1,7 +1,13 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     --szurke: #3d3c3c;
     --card-bg: #1b1a1a;
     --card-text-all: #b0a0ff;
+    --nav-color: rgba(27, 26, 26, 0.775);
+    --nav-color-hover: rgba(27, 26, 26, 1);
     /* ezek "lekérése" var(--szurke); */
 }
 
@@ -11,9 +17,83 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     /* background-image: url(../img/istockphoto-805086280-612x612.png); */
-    background-color: #111;
-    overflow-x: hidden;
+    background-color: #3b414b;
+     overflow-x: hidden;
+    padding-top: 100px;
 }
+
+.centered-italic-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+    background-color: var(--nav-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 2rem;
+    z-index: 2000;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 0 0 0.4rem 0.4rem;
+}
+
+nav.navbar:hover {
+    background-color: var(--nav-color-hover);
+}
+
+.nav-left {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-center img {
+    height: 40px;
+    border-radius: 0.5rem;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-left img {
+    height: 40px;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 /*  Talán egyszer
 
@@ -28,14 +108,44 @@ canvas {
 }
 */
 
-#rolunk {
+#csapat {
     position: relative;
-    overflow: hidden;
-    border-bottom: var(--szurke) solid 1px;
-    top: 0
+    overflow: visible;
+    border-top: 0.05rem solid #302f2f;
+    background-color: #2a2f36;
 }
 
-#rolunk::before {
+#csapat::before {
+    content: "";
+    position: absolute;
+    top: -150px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(59, 65, 75, 1) 0%, rgba(42, 47, 54, 1) 100%);
+    z-index: -1;
+}
+
+#csapat::after {
+    content: "";
+    position: absolute;
+    top: 0;       
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background: linear-gradient(to bottom, rgba(42, 47, 54, 0.6) 0%, rgba(42, 47, 54, 0.3) 100%);
+    z-index: 0;     
+}
+
+#csapat > * {
+    position: relative;
+    z-index: 1; 
+}
+
+
+
+/*
+#csapat::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -47,10 +157,11 @@ canvas {
     background-image: url("../img/try1.jpg");
 }
 
-#rolunk>* {
+#csapat>* {
     position: relative;
     z-index: 1;
 }
+*/
 
 .card {
     scale: 0.85;
@@ -60,10 +171,6 @@ canvas {
     border: 0.35rem solid #302f2f;
     border-radius: 1rem;
 
-}
-
-.card-img-top {
-    height: auto;
 }
 
 .card-rarity {
@@ -105,7 +212,7 @@ canvas {
 
 .card-medium {
     background: #8FF7B0;
-background: linear-gradient(55deg, rgba(173, 216, 255, 1), rgba(135, 206, 250, 1), rgba(100, 149, 237, 1), rgba(138, 43, 226, 1));
+    background: linear-gradient(55deg, rgba(173, 216, 255, 1), rgba(135, 206, 250, 1), rgba(100, 149, 237, 1), rgba(138, 43, 226, 1));
 
 
 
@@ -119,20 +226,30 @@ background: linear-gradient(55deg, rgba(173, 216, 255, 1), rgba(135, 206, 250, 1
 
 }
 
-
-
-
 #aadam,
 #bzoli,
 #htomi,
 #karon {
     position: relative;
+}
+
+.card {
     transition: all 0.3s ease-in-out;
 }
 
-#aadam:hover,
-#bzoli:hover,
-#htomi:hover,
-#karon:hover {
+.card:hover {
     scale: 0.9;
+}
+
+footer {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.footer-bg {
+    background-color: #2a2f36;
+}
+
+
+#csapat {
+    padding-top: 8rem;
 }
