@@ -1,0 +1,18 @@
+#foresz {
+    height: 95vh;
+    width: 95vw;
+    filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#foresz img {
+    width: 99vw;
+    height: 96vh;
+}
+
+#szovegresz {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+    height: 5rem;
+    width: 26rem;
+}
