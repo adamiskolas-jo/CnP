@@ -125,6 +125,10 @@ canvas {
     width: 26rem;
 }
 
+#kezdolap {
+    margin-bottom: 10rem;
+}
+
 #csapat {
     position: relative;
     overflow: visible;
@@ -201,6 +205,10 @@ canvas {
 
 }
 
+.card-img-top {
+    max-height: 557px;
+}
+
 .card-rarity-upper-box {
     width: 55%;
     height: 68%;
@@ -243,13 +251,6 @@ canvas {
 
 }
 
-#aadam,
-#bzoli,
-#htomi,
-#karon {
-    position: relative;
-}
-
 .card {
     transition: all 0.3s ease-in-out;
 }
@@ -269,4 +270,8 @@ footer {
 
 #csapat {
     padding-top: 8rem;
+}
+
+#projektek {
+    padding-top: 8rem !important;
 }
