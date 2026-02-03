@@ -129,6 +129,11 @@ canvas {
     margin-bottom: 10rem;
 }
 
+.projects-card, .team-card{
+    padding-top: 12px;
+}
+
+
 #csapat {
     position: relative;
     overflow: visible;
@@ -185,7 +190,6 @@ canvas {
 */
 
 .card {
-    scale: 0.85;
     margin: 0 1rem;
     background-color: var(--card-bg);
     color: var(--card-text-all);
@@ -196,6 +200,7 @@ canvas {
 
 .card-rarity {
     height: 8.6rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +268,7 @@ canvas {
 }
 
 .card:hover {
-    scale: 0.9;
+    scale: 1.075;
 }
 
 footer {
