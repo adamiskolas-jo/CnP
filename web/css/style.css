@@ -205,6 +205,14 @@ canvas {
 
 }
 
+.card-name{
+    margin: 0.2rem;
+}
+
+.card-rank-margin{
+    margin: 0 0.5rem 1rem 0.4rem;
+}
+
 .card-img-top {
     max-height: 557px;
 }
@@ -248,7 +256,6 @@ canvas {
 .card-easy {
     background: #f3f5bc;
     background: linear-gradient(90deg, rgba(243, 245, 188, 1) 0%, rgba(191, 242, 165, 1) 48%, rgba(143, 247, 176, 1) 100%);
-
 }
 
 .card {
