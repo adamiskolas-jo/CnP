@@ -363,3 +363,45 @@
 }
 
 /* BELSŐ MARGÓK VÉGEEEEEE */
+
+/* Táblázatok */
+
+.cnp-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-bordered-all thead tr th, .table-bordered-all tbody tr td {
+    border: 1px solid black;
+}
+
+.table-bordered-rows{
+    border: 1px solid black;
+}
+
+.table-bordered-rows thead tr th, .table-bordered-rows tbody tr td {
+    border-bottom: 1px solid black;
+}
+.table-text-left *, .table-text-start *{
+    text-align: left;
+}
+
+.table-text-right *, .table-text-end *{
+    text-align: right;
+}
+
+.table-text-center *, .table-text-middle * {
+    text-align: center;
+}
+
+/*
+
+.table-bordered thead tr th, .table-bordered tbody tr td {
+    border-top: 1px solid black;
+}
+
+*/
+
+.table-hover tr:hover {
+    background-color: var(--lila-szin-v);
+}
