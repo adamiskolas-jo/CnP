@@ -861,3 +861,11 @@
 .ul-square {
     list-style-type:square;
 }
+
+.list-pos-inside {
+    list-style-position: inside;
+}
+
+.list-pos-outside {
+    list-style-position: outside;
+}
