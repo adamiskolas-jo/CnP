@@ -137,3 +137,107 @@
 .text-right, .text-right, .szoveg-jobbra {
     text-align: right;
 }
+
+.margin-1rem {
+    margin: 1rem;
+}
+
+.margin-2rem {
+    margin: 2rem;
+}
+
+.margin-3rem {
+    margin: 3rem;
+}
+
+.margin-4rem {
+    margin: 4rem;
+}
+
+.margin-5rem {
+    margin: 5rem;
+}
+
+
+.margin-start-1rem, .margin-left-1rem {
+    margin-left: 1rem;
+}
+
+.margin-start-2rem, .margin-left-2rem {
+    margin-left: 2rem;
+}
+
+.margin-start-3rem, .margin-left-3rem {
+    margin-left: 3rem;
+}
+
+.margin-start-4rem, .margin-left-4rem {
+    margin-left: 4rem;
+}
+
+.margin-start-5rem, .margin-left-5rem {
+    margin-left: 5rem;
+}
+
+
+.margin-end-1rem, .margin-right-1rem {
+    margin-right: 1rem;
+}
+
+.margin-end-2rem, .margin-right-2rem {
+    margin-right: 2rem;
+}
+
+.margin-end-3rem, .margin-right-3rem {
+    margin-right: 3rem;
+}
+
+.margin-end-4rem, .margin-right-4rem {
+    margin-right: 4rem;
+}
+
+.margin-end-5rem, .margin-right-5rem {
+    margin-right: 5rem;
+}
+
+
+.margin-top-1rem {
+    margin-top: 1rem;
+}
+
+.margin-top-2rem {
+    margin-top: 2rem;
+}
+
+.margin-top-3rem {
+    margin-top: 3rem;
+}
+
+.margin-top-4rem {
+    margin-top: 4rem;
+}
+
+.margin-top-5rem {
+    margin-top: 5rem;
+}
+
+
+.margin-bottom-1rem {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-2rem {
+    margin-bottom: 2rem;
+}
+
+.margin-bottom-3rem {
+    margin-bottom: 3rem;
+}
+
+.margin-bottom-4rem {
+    margin-bottom: 4rem;
+}
+
+.margin-bottom-5rem {
+    margin-bottom: 5rem;
+}
