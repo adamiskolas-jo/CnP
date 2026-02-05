@@ -7,6 +7,14 @@
     --zold-szin-v: rgb(33, 88, 11);
     --zold-szin-s: rgb(160, 240, 129);
 
+    --piros-szin: rgb(255, 0, 0);
+    --piros-szin-v: rgb(249, 148, 148);
+    --piros-szin-s: rgb(81, 4, 4);
+
+    --narancs-szin: rgb(240, 149, 12);
+    --narancs-szin-v: rgb(249, 202, 131);
+    --narancs-szin-s: rgb(128, 78, 3);
+
     --vilagos-kek-szin: rgb(24, 218, 224);
     --vilagos-kek-szin-v: rgb(134, 233, 236);
     --vilagos-kek-szin-s: rgb(18, 102, 105);
@@ -14,6 +22,18 @@
     --sotet-kek-szin: rgb(33, 72, 247);
     --sotet-kek-szin-v: rgb(113, 136, 241);
     --sotet-kek-szin-s: rgb(6, 16, 63);
+
+    --feher-szin: rgb(220, 220, 220);
+    --feher-szin-v: rgb(255, 255, 255);
+    --feher-szin-s: rgb(145, 145, 145);
+
+    --szurke-szin: rgb(104, 104, 104);
+    --szurke-szin-v: rgb(155, 155, 155);
+    --szurke-szin-s: rgb(65, 65, 65);
+
+    --fekete-szin: rgb(24, 24, 24);
+    --fekete-szin-v: rgb(60, 60, 60);
+    --fekete-szin-s: rgb(0, 0, 0);
 
 
     margin:0;
@@ -364,33 +384,37 @@
 
 /* BELSŐ MARGÓK VÉGEEEEEE */
 
-/* Táblázatok */
+/* Táblázat SZÍNEK */
 
+
+/* Táblázatok SZÍNEK VÉGE */
+
+/* Táblázatok beállítások */
 .cnp-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.table-bordered-all thead tr th, .table-bordered-all tbody tr td {
+.cnp-table-bordered-all thead tr th, .cnp-table-bordered-all tbody tr td {
     border: 1px solid black;
 }
 
-.table-bordered-rows{
+.cnp-table-bordered-rows{
     border: 1px solid black;
 }
 
-.table-bordered-rows thead tr th, .table-bordered-rows tbody tr td {
+.cnp-table-bordered-rows thead tr th, .cnp-table-bordered-rows tbody tr td {
     border-bottom: 1px solid black;
 }
-.table-text-left *, .table-text-start *{
+.cnp-table-text-left *, .cnp-table-text-start *{
     text-align: left;
 }
 
-.table-text-right *, .table-text-end *{
+.cnp-table-text-right *, .cnp-table-text-end *{
     text-align: right;
 }
 
-.table-text-center *, .table-text-middle * {
+.cnp-table-text-center *, .cnp-table-text-middle * {
     text-align: center;
 }
 
@@ -402,6 +426,10 @@
 
 */
 
-.table-hover tr:hover {
+.cnp-table-hover tr:hover, .cnp-table-hover-row tr:hover {
+    background-color: var(--lila-szin-v);
+}
+
+.cnp-table-hover-cell td:hover, .cnp-table-hover-cell td:hover {
     background-color: var(--lila-szin-v);
 }
