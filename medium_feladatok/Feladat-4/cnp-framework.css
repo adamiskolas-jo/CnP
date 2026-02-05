@@ -869,3 +869,89 @@
 .list-pos-outside {
     list-style-position: outside;
 }
+
+/*   LISTÁK VÉGE :)   */
+
+/* DIV RENDEZŐ METÓDUSOK */
+
+.dis-flex {
+    display: flex;
+}
+
+.dis-flexbox {
+    display: flexbox;
+}
+
+.dis-block {
+    display: block;
+}
+
+.dis-grid {
+    display:grid;
+}
+
+.dis-inline {
+    display:inline;
+}
+
+.dis-inline-block {
+    display: inline-block;
+}
+
+.dis-inline-flex {
+    display: inline-flex;
+}
+
+.dis-inline-flexbox {
+    display: inline-flexbox;
+}
+
+.dis-list-item {
+    display:list-item;
+}
+
+.dis-contents {
+    display:contents;
+}
+
+/* pozíciók */
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-static {
+    position: static;
+}
+
+.pos-sticky {
+    position:sticky;
+}
+
+.float-left, .float-start {
+    float: left;
+}
+
+.float-right, .float-end {
+    float: right;
+}
+
+.float-inline-left, .float-inline-start {
+    float: inline-start;
+}
+
+.float-inline-right, .float-inline-end {
+    float: inline-end;
+}
+
+/* 
+    div rendező metódusok vége
+*/
