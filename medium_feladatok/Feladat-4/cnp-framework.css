@@ -82,6 +82,7 @@
 
     margin:0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 /* a responsivity kezdete */
@@ -517,244 +518,244 @@
 /* Table bg színek vége */
 /* Table hovering színek */
 .table-hover-red tr:hover td, .table-hover-red-row tr:hover td {
-    background-color: var(--red) !important  ;
+    background-color: var(--red);
 }
 
 .table-hover-red-cell td:hover {
-    background-color: var(--red) !important  ;
+    background-color: var(--red);
 }
 
 .table-hover-red-l tr:hover td, .table-hover-red-l-row tr:hover td {
-    background-color: var(--red-l) !important  ;
+    background-color: var(--red-l);
 }
 
 .table-hover-red-l-cell td:hover {
-    background-color: var(--red-l) !important  ;
+    background-color: var(--red-l);
 }
 
 .table-hover-red-d tr:hover td, .table-hover-red-d-row tr:hover td {
-    background-color: var(--red-d) !important  ;
+    background-color: var(--red-d);
 }
 
 .table-hover-red-d-cell td:hover {
-    background-color: var(--red-d) !important  ;
+    background-color: var(--red-d);
 }
 
 .table-hover-green tr:hover td, .table-hover-green-row tr:hover td {
-    background-color: var(--green) !important  ;
+    background-color: var(--green);
 }
 
 .table-hover-green-cell td:hover {
-    background-color: var(--green) !important  ;
+    background-color: var(--green);
 }
 
 .table-hover-green-l tr:hover td, .table-hover-green-l-row tr:hover td {
-    background-color: var(--green-l) !important  ;
+    background-color: var(--green-l);
 }
 
 .table-hover-green-l-cell td:hover {
-    background-color: var(--green-l) !important  ;
+    background-color: var(--green-l);
 }
 
 .table-hover-green-d tr:hover td, .table-hover-green-d-row tr:hover td {
-    background-color: var(--green-d) !important  ;
+    background-color: var(--green-d);
 }
 
 .table-hover-green-d-cell td:hover {
-    background-color: var(--green-d) !important  ;
+    background-color: var(--green-d);
 }
 
 .table-hover-light-blue tr:hover td, .table-hover-light-blue-row tr:hover td {
-    background-color: var(--light-blue) !important  ;
+    background-color: var(--light-blue);
 }
 
 .table-hover-light-blue-cell td:hover {
-    background-color: var(--light-blue) !important  ;
+    background-color: var(--light-blue);
 }
 
 .table-hover-light-blue-l tr:hover td, .table-hover-light-blue-l-row tr:hover td {
-    background-color: var(--light-blue-l) !important  ;
+    background-color: var(--light-blue-l);
 }
 
 .table-hover-light-blue-l-cell td:hover {
-    background-color: var(--light-blue-l) !important  ;
+    background-color: var(--light-blue-l);
 }
 
 .table-hover-light-blue-d tr:hover td, .table-hover-light-blue-d-row tr:hover td {
-    background-color: var(--light-blue-d) !important  ;
+    background-color: var(--light-blue-d);
 }
 
 .table-hover-light-blue-d-cell td:hover {
-    background-color: var(--light-blue-d) !important  ;
+    background-color: var(--light-blue-d);
 }
 
 .table-hover-dark-blue tr:hover td, .table-hover-dark-blue-row tr:hover td {
-    background-color: var(--dark-blue) !important  ;
+    background-color: var(--dark-blue);
 }
 
 .table-hover-dark-blue-cell td:hover {
-    background-color: var(--dark-blue) !important  ;
+    background-color: var(--dark-blue);
 }
 
 .table-hover-dark-blue-l tr:hover td, .table-hover-dark-blue-l-row tr:hover td {
-    background-color: var(--dark-blue-l) !important  ;
+    background-color: var(--dark-blue-l);
 }
 
 .table-hover-dark-blue-l-cell td:hover {
-    background-color: var(--dark-blue-l) !important  ;
+    background-color: var(--dark-blue-l);
 }
 
 .table-hover-dark-blue-d tr:hover td, .table-hover-dark-blue-d-row tr:hover td {
-    background-color: var(--dark-blue-d) !important  ;
+    background-color: var(--dark-blue-d);
 }
 
 .table-hover-dark-blue-d-cell td:hover {
-    background-color: var(--dark-blue-d) !important  ;
+    background-color: var(--dark-blue-d);
 }
 
 .table-hover-orange tr:hover td, .table-hover-orange-row tr:hover td {
-    background-color: var(--orange) !important  ;
+    background-color: var(--orange);
 }
 
 .table-hover-orange-cell td:hover {
-    background-color: var(--orange) !important  ;
+    background-color: var(--orange);
 }
 
 .table-hover-orange-l tr:hover td, .table-hover-orange-l-row tr:hover td {
-    background-color: var(--orange-l) !important  ;
+    background-color: var(--orange-l);
 }
 
 .table-hover-orange-l-cell td:hover {
-    background-color: var(--orange-l) !important  ;
+    background-color: var(--orange-l);
 }
 
 .table-hover-orange-d tr:hover td, .table-hover-orange-d-row tr:hover td {
-    background-color: var(--orange-d) !important  ;
+    background-color: var(--orange-d);
 }
 
 .table-hover-orange-d-cell td:hover {
-    background-color: var(--orange-d) !important  ;
+    background-color: var(--orange-d);
 }
 
 .table-hover-purple tr:hover td, .table-hover-purple-row tr:hover td {
-    background-color: var(--purple) !important  ;
+    background-color: var(--purple);
 }
 
 .table-hover-purple-cell td:hover {
-    background-color: var(--purple) !important  ;
+    background-color: var(--purple);
 }
 
 .table-hover-purple-l tr:hover td, .table-hover-purple-l-row tr:hover td {
-    background-color: var(--purple-l) !important  ;
+    background-color: var(--purple-l);
 }
 
 .table-hover-purple-l-cell td:hover {
-    background-color: var(--purple-l) !important  ;
+    background-color: var(--purple-l);
 }
 
 .table-hover-purple-d tr:hover td, .table-hover-purple-d-row tr:hover td {
-    background-color: var(--purple-d) !important  ;
+    background-color: var(--purple-d);
 }
 
 .table-hover-purple-d-cell td:hover {
-    background-color: var(--purple-d) !important  ;
+    background-color: var(--purple-d);
 }
 
 .table-hover-pink tr:hover td, .table-hover-pink-row tr:hover td {
-    background-color: var(--pink) !important  ;
+    background-color: var(--pink);
 }
 
 .table-hover-pink-cell td:hover {
-    background-color: var(--pink) !important  ;
+    background-color: var(--pink);
 }
 
 .table-hover-pink-l tr:hover td, .table-hover-pink-l-row tr:hover td {
-    background-color: var(--pink-l) !important  ;
+    background-color: var(--pink-l);
 }
 
 .table-hover-pink-l-cell td:hover {
-    background-color: var(--pink-l) !important  ;
+    background-color: var(--pink-l);
 }
 
 .table-hover-pink-d tr:hover td, .table-hover-pink-d-row tr:hover td {
-    background-color: var(--pink-d) !important  ;
+    background-color: var(--pink-d);
 }
 
 .table-hover-pink-d-cell td:hover {
-    background-color: var(--pink-d) !important  ;
+    background-color: var(--pink-d);
 }
 
 .table-hover-white tr:hover td, .table-hover-white-row tr:hover td {
-    background-color: var(--white) !important  ;
+    background-color: var(--white);
 }
 
 .table-hover-white-cell td:hover {
-    background-color: var(--white) !important  ;
+    background-color: var(--white);
 }
 
 .table-hover-white-l tr:hover td, .table-hover-white-l-row tr:hover td {
-    background-color: var(--white-l) !important  ;
+    background-color: var(--white-l);
 }
 
 .table-hover-white-l-cell td:hover {
-    background-color: var(--white-l) !important  ;
+    background-color: var(--white-l);
 }
 
 .table-hover-white-d tr:hover td, .table-hover-white-d-row tr:hover td {
-    background-color: var(--white-d) !important  ;
+    background-color: var(--white-d);
 }
 
 .table-hover-white-d-cell td:hover {
-    background-color: var(--white-d) !important  ;
+    background-color: var(--white-d);
 }
 
 
 .table-hover-grey tr:hover td, .table-hover-grey-row tr:hover td {
-    background-color: var(--grey) !important  ;
+    background-color: var(--grey);
 }
 
 .table-hover-grey-cell td:hover {
-    background-color: var(--grey) !important  ;
+    background-color: var(--grey);
 }
 
 .table-hover-grey-l tr:hover td, .table-hover-grey-l-row tr:hover td {
-    background-color: var(--grey-l) !important  ;
+    background-color: var(--grey-l);
 }
 
 .table-hover-grey-l-cell td:hover {
-    background-color: var(--grey-l) !important  ;
+    background-color: var(--grey-l);
 }
 
 .table-hover-grey-d tr:hover td, .table-hover-grey-d-row tr:hover td {
-    background-color: var(--grey-d) !important  ;
+    background-color: var(--grey-d);
 }
 
 .table-hover-grey-d-cell td:hover {
-    background-color: var(--grey-d) !important  ;
+    background-color: var(--grey-d);
 }
 
 .table-hover-black tr:hover td, .table-hover-black-row tr:hover td {
-    background-color: var(--black) !important  ;
+    background-color: var(--black);
 }
 
 .table-hover-black-cell td:hover {
-    background-color: var(--black) !important  ;
+    background-color: var(--black);
 }
 
 .table-hover-black-l tr:hover td, .table-hover-black-l-row tr:hover td {
-    background-color: var(--black-l) !important  ;
+    background-color: var(--black-l);
 }
 
 .table-hover-black-l-cell td:hover {
-    background-color: var(--black-l) !important  ;
+    background-color: var(--black-l);
 }
 
 .table-hover-black-d tr:hover td, .table-hover-black-d-row tr:hover td {
-    background-color: var(--black-d) !important  ;
+    background-color: var(--black-d);
 }
 
 .table-hover-black-d-cell td:hover {
-    background-color: var(--black-d) !important  ;
+    background-color: var(--black-d);
 }
 
 /*     TÁBLÁZAT HOVER SZÍNEK VÉGE    */
@@ -791,8 +792,72 @@
 
 /*
 
-.table-bordered thead tr th, .table-bordered tbody tr td {
-    border-top: 1px solid black;
-}
+        táblázatok VÉGE
 
 */
+
+/* FELSOROLÁŰSOK */
+
+.ol-none {
+    list-style-type: none;
+}
+
+.ol-dec {
+    list-style-type: decimal;
+}
+
+.ol-armenian {
+    list-style-type:armenian;
+}
+
+.ol-dec-lead-0 {
+    list-style-type: decimal-leading-zero;
+}
+
+.ol-georgian {
+    list-style-type:georgian;
+}
+
+.ol-lower-alpha{
+    list-style-type:lower-alpha;
+}
+
+.ol-upper-alpha, .ol-alpha{
+    list-style-type: upper-alpha;
+}
+
+.ol-lower-roman{
+    list-style-type:lower-roman;
+}
+
+.ol-upper-roman, .ol-roman{
+    list-style-type:upper-alpha;
+}
+
+.ol-lower-greek{
+    list-style-type:lower-greek;
+}
+
+.ol-upper-greek, .ol-greek{
+    list-style-type:upper-alpha;
+}
+
+.ol-lower-latin{
+    list-style-type:lower-latin;
+}
+
+.ol-upper-latin, .ol-latin{
+    list-style-type:upper-alpha;
+}
+
+.ul-disc {
+    list-style-type: disc;
+}
+
+.ul-circle {
+    list-style-type: circle;
+}
+
+.ul-square {
+    list-style-type:square;
+}
