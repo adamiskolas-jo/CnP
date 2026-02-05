@@ -1,39 +1,39 @@
 * {
-    --lila-szin: rgb(172, 73, 238);
-    --lila-szin-v: rgb(196, 129, 240);
-    --lila-szin-s: rgb(60, 15, 90);
+    --lila: rgb(172, 73, 238);
+    --lila-v: rgb(196, 129, 240);
+    --lila-s: rgb(60, 15, 90);
 
-    --zold-szin: rgb(108, 233, 59);
-    --zold-szin-v: rgb(33, 88, 11);
-    --zold-szin-s: rgb(160, 240, 129);
+    --zold: rgb(108, 233, 59);
+    --zold-v: rgb(33, 88, 11);
+    --zold-s: rgb(160, 240, 129);
 
-    --piros-szin: rgb(255, 0, 0);
-    --piros-szin-v: rgb(249, 148, 148);
-    --piros-szin-s: rgb(81, 4, 4);
+    --piros: rgb(255, 0, 0);
+    --piros-v: rgb(249, 148, 148);
+    --piros-s: rgb(81, 4, 4);
 
-    --narancs-szin: rgb(240, 149, 12);
-    --narancs-szin-v: rgb(249, 202, 131);
-    --narancs-szin-s: rgb(128, 78, 3);
+    --narancs: rgb(240, 149, 12);
+    --narancs-v: rgb(249, 202, 131);
+    --narancs-s: rgb(128, 78, 3);
 
-    --vilagos-kek-szin: rgb(24, 218, 224);
-    --vilagos-kek-szin-v: rgb(134, 233, 236);
-    --vilagos-kek-szin-s: rgb(18, 102, 105);
+    --vilagos-kek: rgb(24, 218, 224);
+    --vilagos-kek-v: rgb(134, 233, 236);
+    --vilagos-kek-s: rgb(18, 102, 105);
 
-    --sotet-kek-szin: rgb(33, 72, 247);
-    --sotet-kek-szin-v: rgb(113, 136, 241);
-    --sotet-kek-szin-s: rgb(6, 16, 63);
+    --sotet-kek: rgb(33, 72, 247);
+    --sotet-kek-v: rgb(113, 136, 241);
+    --sotet-kek-s: rgb(6, 16, 63);
 
-    --feher-szin: rgb(220, 220, 220);
-    --feher-szin-v: rgb(255, 255, 255);
-    --feher-szin-s: rgb(145, 145, 145);
+    --feher: rgb(220, 220, 220);
+    --feher-v: rgb(255, 255, 255);
+    --feher-s: rgb(145, 145, 145);
 
-    --szurke-szin: rgb(104, 104, 104);
-    --szurke-szin-v: rgb(155, 155, 155);
-    --szurke-szin-s: rgb(65, 65, 65);
+    --szurke: rgb(104, 104, 104);
+    --szurke-v: rgb(155, 155, 155);
+    --szurke-s: rgb(65, 65, 65);
 
-    --fekete-szin: rgb(24, 24, 24);
-    --fekete-szin-v: rgb(60, 60, 60);
-    --fekete-szin-s: rgb(0, 0, 0);
+    --fekete: rgb(24, 24, 24);
+    --fekete-v: rgb(60, 60, 60);
+    --fekete-s: rgb(0, 0, 0);
 
 
     margin:0;
@@ -427,9 +427,9 @@
 */
 
 .cnp-table-hover tr:hover, .cnp-table-hover-row tr:hover {
-    background-color: var(--lila-szin-v);
+    background-color: var(--lila-v);
 }
 
 .cnp-table-hover-cell td:hover, .cnp-table-hover-cell td:hover {
-    background-color: var(--lila-szin-v);
+    background-color: var(--lila-v);
 }
