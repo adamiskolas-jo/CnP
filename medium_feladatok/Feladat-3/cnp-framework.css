@@ -1,19 +1,11 @@
 * {
-    --lila: rgb(172, 73, 238);
-    --lila-v: rgb(196, 129, 240);
-    --lila-s: rgb(60, 15, 90);
-
-    --zold: rgb(108, 233, 59);
-    --zold-v: rgb(33, 88, 11);
-    --zold-s: rgb(160, 240, 129);
-
     --piros: rgb(255, 0, 0);
     --piros-v: rgb(249, 148, 148);
     --piros-s: rgb(81, 4, 4);
 
-    --narancs: rgb(240, 149, 12);
-    --narancs-v: rgb(249, 202, 131);
-    --narancs-s: rgb(128, 78, 3);
+    --zold: rgb(108, 233, 59);
+    --zold-v: rgb(33, 88, 11);
+    --zold-s: rgb(160, 240, 129);
 
     --vilagos-kek: rgb(24, 218, 224);
     --vilagos-kek-v: rgb(134, 233, 236);
@@ -22,6 +14,18 @@
     --sotet-kek: rgb(33, 72, 247);
     --sotet-kek-v: rgb(113, 136, 241);
     --sotet-kek-s: rgb(6, 16, 63);
+
+    --narancs: rgb(240, 149, 12);
+    --narancs-v: rgb(249, 202, 131);
+    --narancs-s: rgb(128, 78, 3);
+
+    --lila: rgb(172, 73, 238);
+    --lila-v: rgb(196, 129, 240);
+    --lila-s: rgb(60, 15, 90);
+
+    --rozsaszin: rgb(255, 120, 142);
+    --rozsaszin-v: rgb(251, 172, 185);
+    --rozsaszin-s: rgb(130, 58, 70);
 
     --feher: rgb(220, 220, 220);
     --feher-v: rgb(255, 255, 255);
@@ -35,6 +39,46 @@
     --fekete-v: rgb(60, 60, 60);
     --fekete-s: rgb(0, 0, 0);
 
+    /* Angol színek innenstől */
+    --red: rgb(255, 0, 0);
+    --red-l: rgb(249, 148, 148);
+    --red-d: rgb(81, 4, 4);
+
+    --green: rgb(108, 233, 59);
+    --green-l: rgb(33, 88, 11);
+    --green-d: rgb(160, 240, 129);
+
+    --light-blue: rgb(24, 218, 224);
+    --light-blue-l: rgb(134, 233, 236);
+    --light-blue-d: rgb(18, 102, 105);
+
+    --dark-blue: rgb(33, 72, 247);
+    --dark-blue-l: rgb(113, 136, 241);
+    --dark-blue-d: rgb(6, 16, 63);
+
+    --orange: rgb(240, 149, 12);
+    --orange-l: rgb(249, 202, 131);
+    --orange-d: rgb(128, 78, 3);
+
+    --purple: rgb(172, 73, 238);
+    --purple-l: rgb(196, 129, 240);
+    --purple-d: rgb(60, 15, 90);
+
+    --pink: rgb(255, 120, 142);
+    --pink-l: rgb(251, 172, 185);
+    --pink-d: rgb(130, 58, 70);
+
+    --white: rgb(220, 220, 220);
+    --white-l: rgb(255, 255, 255);
+    --white-d: rgb(145, 145, 145);
+
+    --grey: rgb(104, 104, 104);
+    --grey-l: rgb(155, 155, 155);
+    --grey-d: rgb(65, 65, 65);
+
+    --black: rgb(24, 24, 24);
+    --black-l: rgb(60, 60, 60);
+    --black-d: rgb(0, 0, 0);
 
     margin:0;
     box-sizing: border-box;
