@@ -20,6 +20,9 @@
     box-sizing: border-box;
 }
 
+/* a responsivity kezdete */
+
+
 .container{
     max-width: 1200px;
     width: 100%;
@@ -124,7 +127,10 @@
     .col-xxl-12{ width: calc(100% / 12 * 12 - 20px); }
 }
 
+/* a responsivity vége jó kis hunglish */
 
+
+/* Text stuff */
 
 .text-left, .text-start, .szoveg-balra {
     text-align: left;
@@ -138,9 +144,11 @@
     text-align: right;
 }
 
+/* vége Text stuff */
 
 
 
+/* MARGÓK */
 
 .margin-1rem {
     margin: 1rem;
@@ -246,28 +254,28 @@
     margin-bottom: 5rem;
 }
 
+/* MARGÓK VÉGEEEE */
 
-
-
+/* BELSŐ MARGÓK */
 
 .padding-1rem {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .padding-2rem {
-    margin: 2rem;
+    padding: 2rem;
 }
 
 .padding-3rem {
-    margin: 3rem;
+    padding: 3rem;
 }
 
 .padding-4rem {
-    margin: 4rem;
+    padding: 4rem;
 }
 
 .padding-5rem {
-    margin: 5rem;
+    padding: 5rem;
 }
 
 
@@ -353,3 +361,5 @@
 .padding-bottom-5rem {
     padding-bottom: 5rem;
 }
+
+/* BELSŐ MARGÓK VÉGEEEEEE */
