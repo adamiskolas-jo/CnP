@@ -1,0 +1,957 @@
+* {
+    --piros: rgb(255, 0, 0);
+    --piros-v: rgb(249, 148, 148);
+    --piros-s: rgb(81, 4, 4);
+
+    --zold: rgb(108, 233, 59);
+    --zold-v: rgb(33, 88, 11);
+    --zold-s: rgb(160, 240, 129);
+
+    --vilagos-kek: rgb(24, 218, 224);
+    --vilagos-kek-v: rgb(134, 233, 236);
+    --vilagos-kek-s: rgb(18, 102, 105);
+
+    --sotet-kek: rgb(33, 72, 247);
+    --sotet-kek-v: rgb(113, 136, 241);
+    --sotet-kek-s: rgb(6, 16, 63);
+
+    --narancs: rgb(240, 149, 12);
+    --narancs-v: rgb(249, 202, 131);
+    --narancs-s: rgb(128, 78, 3);
+
+    --lila: rgb(172, 73, 238);
+    --lila-v: rgb(196, 129, 240);
+    --lila-s: rgb(60, 15, 90);
+
+    --rozsaszin: rgb(255, 120, 142);
+    --rozsaszin-v: rgb(251, 172, 185);
+    --rozsaszin-s: rgb(130, 58, 70);
+
+    --feher: rgb(220, 220, 220);
+    --feher-v: rgb(255, 255, 255);
+    --feher-s: rgb(145, 145, 145);
+
+    --szurke: rgb(104, 104, 104);
+    --szurke-v: rgb(155, 155, 155);
+    --szurke-s: rgb(65, 65, 65);
+
+    --fekete: rgb(24, 24, 24);
+    --fekete-v: rgb(60, 60, 60);
+    --fekete-s: rgb(0, 0, 0);
+
+    /* Angol színek innenstől */
+    --red: rgb(255, 0, 0);
+    --red-l: rgb(249, 148, 148);
+    --red-d: rgb(81, 4, 4);
+
+    --green: rgb(108, 233, 59);
+    --green-l: rgb(33, 88, 11);
+    --green-d: rgb(160, 240, 129);
+
+    --light-blue: rgb(24, 218, 224);
+    --light-blue-l: rgb(134, 233, 236);
+    --light-blue-d: rgb(18, 102, 105);
+
+    --dark-blue: rgb(33, 72, 247);
+    --dark-blue-l: rgb(113, 136, 241);
+    --dark-blue-d: rgb(6, 16, 63);
+
+    --orange: rgb(240, 149, 12);
+    --orange-l: rgb(249, 202, 131);
+    --orange-d: rgb(128, 78, 3);
+
+    --purple: rgb(172, 73, 238);
+    --purple-l: rgb(196, 129, 240);
+    --purple-d: rgb(60, 15, 90);
+
+    --pink: rgb(255, 120, 142);
+    --pink-l: rgb(251, 172, 185);
+    --pink-d: rgb(130, 58, 70);
+
+    --white: rgb(220, 220, 220);
+    --white-l: rgb(255, 255, 255);
+    --white-d: rgb(145, 145, 145);
+
+    --grey: rgb(104, 104, 104);
+    --grey-l: rgb(155, 155, 155);
+    --grey-d: rgb(65, 65, 65);
+
+    --black: rgb(24, 24, 24);
+    --black-l: rgb(60, 60, 60);
+    --black-d: rgb(0, 0, 0);
+
+    margin:0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* a responsivity kezdete */
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.row{
+    font-size: 0;
+}
+[class^="col-"]{
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+
+}
+
+.col-1{ width: calc(100% / 12 * 1 - 20px); }
+.col-2{ width: calc(100% / 12 * 2 - 20px); }
+.col-3{ width: calc(100% / 12 * 3 - 20px); }
+.col-4{ width: calc(100% / 12 * 4 - 20px); }
+.col-5{ width: calc(100% / 12 * 5 - 20px); }
+.col-6{ width: calc(100% / 12 * 6 - 20px); }
+.col-7{ width: calc(100% / 12 * 7 - 20px); }
+.col-8{ width: calc(100% / 12 * 8 - 20px); }
+.col-9{ width: calc(100% / 12 * 9 - 20px); }
+.col-10{ width: calc(100% / 12 * 10 - 20px); }
+.col-11{ width: calc(100% / 12 * 11 - 20px); }
+.col-12{ width: calc(100% / 12 * 12 - 20px); }
+
+@media only screen and (min-width:600px){
+    .col-sm-1{ width: calc(100% / 12 * 1 - 20px); }
+    .col-sm-2{ width: calc(100% / 12 * 2 - 20px); }
+    .col-sm-3{ width: calc(100% / 12 * 3 - 20px); }
+    .col-sm-4{ width: calc(100% / 12 * 4 - 20px); }
+    .col-sm-5{ width: calc(100% / 12 * 5 - 20px); }
+    .col-sm-6{ width: calc(100% / 12 * 6 - 20px); }
+    .col-sm-7{ width: calc(100% / 12 * 7 - 20px); }
+    .col-sm-8{ width: calc(100% / 12 * 8 - 20px); }
+    .col-sm-9{ width: calc(100% / 12 * 9 - 20px); }
+    .col-sm-10{ width: calc(100% / 12 * 10 - 20px); }
+    .col-sm-11{ width: calc(100% / 12 * 11 - 20px); }
+    .col-sm-12{ width: calc(100% / 12 * 12 - 20px); }
+}
+@media only screen and (min-width:768px){
+    .col-md-1{ width: calc(100% / 12 * 1 - 20px); }
+    .col-md-2{ width: calc(100% / 12 * 2 - 20px); }
+    .col-md-3{ width: calc(100% / 12 * 3 - 20px); }
+    .col-md-4{ width: calc(100% / 12 * 4 - 20px); }
+    .col-md-5{ width: calc(100% / 12 * 5 - 20px); }
+    .col-md-6{ width: calc(100% / 12 * 6 - 20px); }
+    .col-md-7{ width: calc(100% / 12 * 7 - 20px); }
+    .col-md-8{ width: calc(100% / 12 * 8 - 20px); }
+    .col-md-9{ width: calc(100% / 12 * 9 - 20px); }
+    .col-md-10{ width: calc(100% / 12 * 10 - 20px); }
+    .col-md-11{ width: calc(100% / 12 * 11 - 20px); }
+    .col-md-12{ width: calc(100% / 12 * 12 - 20px); }
+}
+
+@media only screen and (min-width:992px){
+    .col-lg-1{ width: calc(100% / 12 * 1 - 20px); }
+    .col-lg-2{ width: calc(100% / 12 * 2 - 20px); }
+    .col-lg-3{ width: calc(100% / 12 * 3 - 20px); }
+    .col-lg-4{ width: calc(100% / 12 * 4 - 20px); }
+    .col-lg-5{ width: calc(100% / 12 * 5 - 20px); }
+    .col-lg-6{ width: calc(100% / 12 * 6 - 20px); }
+    .col-lg-7{ width: calc(100% / 12 * 7 - 20px); }
+    .col-lg-8{ width: calc(100% / 12 * 8 - 20px); }
+    .col-lg-9{ width: calc(100% / 12 * 9 - 20px); }
+    .col-lg-10{ width: calc(100% / 12 * 10 - 20px); }
+    .col-lg-11{ width: calc(100% / 12 * 11 - 20px); }
+    .col-lg-12{ width: calc(100% / 12 * 12 - 20px); }
+}
+
+@media only screen and (min-width:1200px){
+    .col-xl-1{ width: calc(100% / 12 * 1 - 20px); }
+    .col-xl-2{ width: calc(100% / 12 * 2 - 20px); }
+    .col-xl-3{ width: calc(100% / 12 * 3 - 20px); }
+    .col-xl-4{ width: calc(100% / 12 * 4 - 20px); }
+    .col-xl-5{ width: calc(100% / 12 * 5 - 20px); }
+    .col-xl-6{ width: calc(100% / 12 * 6 - 20px); }
+    .col-xl-7{ width: calc(100% / 12 * 7 - 20px); }
+    .col-xl-8{ width: calc(100% / 12 * 8 - 20px); }
+    .col-xl-9{ width: calc(100% / 12 * 9 - 20px); }
+    .col-xl-10{ width: calc(100% / 12 * 10 - 20px); }
+    .col-xl-11{ width: calc(100% / 12 * 11 - 20px); }
+    .col-xl-12{ width: calc(100% / 12 * 12 - 20px); }
+}
+
+@media only screen and (min-width:1400px){
+    .col-xxl-1{ width: calc(100% / 12 * 1 - 20px); }
+    .col-xxl-2{ width: calc(100% / 12 * 2 - 20px); }
+    .col-xxl-3{ width: calc(100% / 12 * 3 - 20px); }
+    .col-xxl-4{ width: calc(100% / 12 * 4 - 20px); }
+    .col-xxl-5{ width: calc(100% / 12 * 5 - 20px); }
+    .col-xxl-6{ width: calc(100% / 12 * 6 - 20px); }
+    .col-xxl-7{ width: calc(100% / 12 * 7 - 20px); }
+    .col-xxl-8{ width: calc(100% / 12 * 8 - 20px); }
+    .col-xxl-9{ width: calc(100% / 12 * 9 - 20px); }
+    .col-xxl-10{ width: calc(100% / 12 * 10 - 20px); }
+    .col-xxl-11{ width: calc(100% / 12 * 11 - 20px); }
+    .col-xxl-12{ width: calc(100% / 12 * 12 - 20px); }
+}
+
+/* a responsivity vége jó kis hunglish */
+
+
+/* Text stuff */
+
+.text-left, .text-start, .szoveg-balra {
+    text-align: left;
+}
+
+.text-center, .text-middle, .szoveg-kozep {
+    text-align: center;
+}
+
+.text-right, .text-right, .szoveg-jobbra {
+    text-align: right;
+}
+
+/* vége Text stuff */
+
+
+
+/* MARGÓK */
+
+.margin-1rem {
+    margin: 1rem;
+}
+
+.margin-2rem {
+    margin: 2rem;
+}
+
+.margin-3rem {
+    margin: 3rem;
+}
+
+.margin-4rem {
+    margin: 4rem;
+}
+
+.margin-5rem {
+    margin: 5rem;
+}
+
+
+.margin-start-1rem, .margin-left-1rem {
+    margin-left: 1rem;
+}
+
+.margin-start-2rem, .margin-left-2rem {
+    margin-left: 2rem;
+}
+
+.margin-start-3rem, .margin-left-3rem {
+    margin-left: 3rem;
+}
+
+.margin-start-4rem, .margin-left-4rem {
+    margin-left: 4rem;
+}
+
+.margin-start-5rem, .margin-left-5rem {
+    margin-left: 5rem;
+}
+
+
+.margin-end-1rem, .margin-right-1rem {
+    margin-right: 1rem;
+}
+
+.margin-end-2rem, .margin-right-2rem {
+    margin-right: 2rem;
+}
+
+.margin-end-3rem, .margin-right-3rem {
+    margin-right: 3rem;
+}
+
+.margin-end-4rem, .margin-right-4rem {
+    margin-right: 4rem;
+}
+
+.margin-end-5rem, .margin-right-5rem {
+    margin-right: 5rem;
+}
+
+
+.margin-top-1rem {
+    margin-top: 1rem;
+}
+
+.margin-top-2rem {
+    margin-top: 2rem;
+}
+
+.margin-top-3rem {
+    margin-top: 3rem;
+}
+
+.margin-top-4rem {
+    margin-top: 4rem;
+}
+
+.margin-top-5rem {
+    margin-top: 5rem;
+}
+
+
+.margin-bottom-1rem {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-2rem {
+    margin-bottom: 2rem;
+}
+
+.margin-bottom-3rem {
+    margin-bottom: 3rem;
+}
+
+.margin-bottom-4rem {
+    margin-bottom: 4rem;
+}
+
+.margin-bottom-5rem {
+    margin-bottom: 5rem;
+}
+
+/* MARGÓK VÉGEEEE */
+
+/* BELSŐ MARGÓK */
+
+.padding-1rem {
+    padding: 1rem;
+}
+
+.padding-2rem {
+    padding: 2rem;
+}
+
+.padding-3rem {
+    padding: 3rem;
+}
+
+.padding-4rem {
+    padding: 4rem;
+}
+
+.padding-5rem {
+    padding: 5rem;
+}
+
+
+.padding-start-1rem, .padding-left-1rem {
+    padding-left: 1rem;
+}
+
+.padding-start-2rem, .padding-left-2rem {
+    padding-left: 2rem;
+}
+
+.padding-start-3rem, .padding-left-3rem {
+    padding-left: 3rem;
+}
+
+.padding-start-4rem, .padding-left-4rem {
+    padding-left: 4rem;
+}
+
+.padding-start-5rem, .padding-left-5rem {
+    padding-left: 5rem;
+}
+
+
+.padding-end-1rem, .padding-right-1rem {
+    padding-right: 1rem;
+}
+
+.padding-end-2rem, .padding-right-2rem {
+    padding-right: 2rem;
+}
+
+.padding-end-3rem, .padding-right-3rem {
+    padding-right: 3rem;
+}
+
+.padding-end-4rem, .padding-right-4rem {
+    padding-right: 4rem;
+}
+
+.padding-end-5rem, .padding-right-5rem {
+    padding-right: 5rem;
+}
+
+
+.padding-top-1rem {
+    padding-top: 1rem;
+}
+
+.padding-top-2rem {
+    padding-top: 2rem;
+}
+
+.padding-top-3rem {
+    padding-top: 3rem;
+}
+
+.padding-top-4rem {
+    padding-top: 4rem;
+}
+
+.padding-top-5rem {
+    padding-top: 5rem;
+}
+
+
+.padding-bottom-1rem {
+    padding-bottom: 1rem;
+}
+
+.padding-bottom-2rem {
+    padding-bottom: 2rem;
+}
+
+.padding-bottom-3rem {
+    padding-bottom: 3rem;
+}
+
+.padding-bottom-4rem {
+    padding-bottom: 4rem;
+}
+
+.padding-bottom-5rem {
+    padding-bottom: 5rem;
+}
+
+/* BELSŐ MARGÓK VÉGEEEEEE */
+
+/*
+
+>>>>        Táblázat SZÍNEK 
+
+*/
+
+.table-red thead tr th {
+    background-color: var(--red-d);
+}
+
+.table-red tbody tr td {
+    background-color: var(--red-l);
+}
+
+.table-light-blue thead tr th {
+    background-color: var(--light-blue-d);
+}
+
+.table-light-blue tbody tr td {
+    background-color: var(--light-blue-l);
+}
+
+.table-dark-blue thead tr th {
+    background-color: var(--dark-blue-d);
+}
+
+.table-dark-blue tbody tr td {
+    background-color: var(--dark-blue-l);
+}
+
+.table-pink thead tr th {
+    background-color: var(--pink-d);
+}
+
+.table-pink tbody tr td {
+    background-color: var(--pink-l);
+}
+
+.table-purple thead tr th {
+    background-color: var(--purple-d);
+}
+
+.table-purple tbody tr td {
+    background-color: var(--purple-l);
+}
+
+.table-green thead tr th {
+    background-color: var(--green-d);
+}
+
+.table-green tbody tr td {
+    background-color: var(--green-l);
+}
+
+.table-orange thead tr th {
+    background-color: var(--orange-d);
+}
+
+.table-orange tbody tr td {
+    background-color: var(--orange-l);
+}
+
+.table-black thead tr th {
+    background-color: var(--black-d);
+}
+
+.table-black tbody tr td {
+    background-color: var(--black-l);
+}
+
+.table-grey thead tr th {
+    background-color: var(--grey-d);
+}
+
+.table-grey tbody tr td {
+    background-color: var(--grey-l);
+}
+
+.table-white thead tr th {
+    background-color: var(--white-d);
+}
+
+.table-white tbody tr td {
+    background-color: var(--white-l);
+}
+
+/* Table bg színek vége */
+/* Table hovering színek */
+.table-hover-red tr:hover td, .table-hover-red-row tr:hover td {
+    background-color: var(--red);
+}
+
+.table-hover-red-cell td:hover {
+    background-color: var(--red);
+}
+
+.table-hover-red-l tr:hover td, .table-hover-red-l-row tr:hover td {
+    background-color: var(--red-l);
+}
+
+.table-hover-red-l-cell td:hover {
+    background-color: var(--red-l);
+}
+
+.table-hover-red-d tr:hover td, .table-hover-red-d-row tr:hover td {
+    background-color: var(--red-d);
+}
+
+.table-hover-red-d-cell td:hover {
+    background-color: var(--red-d);
+}
+
+.table-hover-green tr:hover td, .table-hover-green-row tr:hover td {
+    background-color: var(--green);
+}
+
+.table-hover-green-cell td:hover {
+    background-color: var(--green);
+}
+
+.table-hover-green-l tr:hover td, .table-hover-green-l-row tr:hover td {
+    background-color: var(--green-l);
+}
+
+.table-hover-green-l-cell td:hover {
+    background-color: var(--green-l);
+}
+
+.table-hover-green-d tr:hover td, .table-hover-green-d-row tr:hover td {
+    background-color: var(--green-d);
+}
+
+.table-hover-green-d-cell td:hover {
+    background-color: var(--green-d);
+}
+
+.table-hover-light-blue tr:hover td, .table-hover-light-blue-row tr:hover td {
+    background-color: var(--light-blue);
+}
+
+.table-hover-light-blue-cell td:hover {
+    background-color: var(--light-blue);
+}
+
+.table-hover-light-blue-l tr:hover td, .table-hover-light-blue-l-row tr:hover td {
+    background-color: var(--light-blue-l);
+}
+
+.table-hover-light-blue-l-cell td:hover {
+    background-color: var(--light-blue-l);
+}
+
+.table-hover-light-blue-d tr:hover td, .table-hover-light-blue-d-row tr:hover td {
+    background-color: var(--light-blue-d);
+}
+
+.table-hover-light-blue-d-cell td:hover {
+    background-color: var(--light-blue-d);
+}
+
+.table-hover-dark-blue tr:hover td, .table-hover-dark-blue-row tr:hover td {
+    background-color: var(--dark-blue);
+}
+
+.table-hover-dark-blue-cell td:hover {
+    background-color: var(--dark-blue);
+}
+
+.table-hover-dark-blue-l tr:hover td, .table-hover-dark-blue-l-row tr:hover td {
+    background-color: var(--dark-blue-l);
+}
+
+.table-hover-dark-blue-l-cell td:hover {
+    background-color: var(--dark-blue-l);
+}
+
+.table-hover-dark-blue-d tr:hover td, .table-hover-dark-blue-d-row tr:hover td {
+    background-color: var(--dark-blue-d);
+}
+
+.table-hover-dark-blue-d-cell td:hover {
+    background-color: var(--dark-blue-d);
+}
+
+.table-hover-orange tr:hover td, .table-hover-orange-row tr:hover td {
+    background-color: var(--orange);
+}
+
+.table-hover-orange-cell td:hover {
+    background-color: var(--orange);
+}
+
+.table-hover-orange-l tr:hover td, .table-hover-orange-l-row tr:hover td {
+    background-color: var(--orange-l);
+}
+
+.table-hover-orange-l-cell td:hover {
+    background-color: var(--orange-l);
+}
+
+.table-hover-orange-d tr:hover td, .table-hover-orange-d-row tr:hover td {
+    background-color: var(--orange-d);
+}
+
+.table-hover-orange-d-cell td:hover {
+    background-color: var(--orange-d);
+}
+
+.table-hover-purple tr:hover td, .table-hover-purple-row tr:hover td {
+    background-color: var(--purple);
+}
+
+.table-hover-purple-cell td:hover {
+    background-color: var(--purple);
+}
+
+.table-hover-purple-l tr:hover td, .table-hover-purple-l-row tr:hover td {
+    background-color: var(--purple-l);
+}
+
+.table-hover-purple-l-cell td:hover {
+    background-color: var(--purple-l);
+}
+
+.table-hover-purple-d tr:hover td, .table-hover-purple-d-row tr:hover td {
+    background-color: var(--purple-d);
+}
+
+.table-hover-purple-d-cell td:hover {
+    background-color: var(--purple-d);
+}
+
+.table-hover-pink tr:hover td, .table-hover-pink-row tr:hover td {
+    background-color: var(--pink);
+}
+
+.table-hover-pink-cell td:hover {
+    background-color: var(--pink);
+}
+
+.table-hover-pink-l tr:hover td, .table-hover-pink-l-row tr:hover td {
+    background-color: var(--pink-l);
+}
+
+.table-hover-pink-l-cell td:hover {
+    background-color: var(--pink-l);
+}
+
+.table-hover-pink-d tr:hover td, .table-hover-pink-d-row tr:hover td {
+    background-color: var(--pink-d);
+}
+
+.table-hover-pink-d-cell td:hover {
+    background-color: var(--pink-d);
+}
+
+.table-hover-white tr:hover td, .table-hover-white-row tr:hover td {
+    background-color: var(--white);
+}
+
+.table-hover-white-cell td:hover {
+    background-color: var(--white);
+}
+
+.table-hover-white-l tr:hover td, .table-hover-white-l-row tr:hover td {
+    background-color: var(--white-l);
+}
+
+.table-hover-white-l-cell td:hover {
+    background-color: var(--white-l);
+}
+
+.table-hover-white-d tr:hover td, .table-hover-white-d-row tr:hover td {
+    background-color: var(--white-d);
+}
+
+.table-hover-white-d-cell td:hover {
+    background-color: var(--white-d);
+}
+
+
+.table-hover-grey tr:hover td, .table-hover-grey-row tr:hover td {
+    background-color: var(--grey);
+}
+
+.table-hover-grey-cell td:hover {
+    background-color: var(--grey);
+}
+
+.table-hover-grey-l tr:hover td, .table-hover-grey-l-row tr:hover td {
+    background-color: var(--grey-l);
+}
+
+.table-hover-grey-l-cell td:hover {
+    background-color: var(--grey-l);
+}
+
+.table-hover-grey-d tr:hover td, .table-hover-grey-d-row tr:hover td {
+    background-color: var(--grey-d);
+}
+
+.table-hover-grey-d-cell td:hover {
+    background-color: var(--grey-d);
+}
+
+.table-hover-black tr:hover td, .table-hover-black-row tr:hover td {
+    background-color: var(--black);
+}
+
+.table-hover-black-cell td:hover {
+    background-color: var(--black);
+}
+
+.table-hover-black-l tr:hover td, .table-hover-black-l-row tr:hover td {
+    background-color: var(--black-l);
+}
+
+.table-hover-black-l-cell td:hover {
+    background-color: var(--black-l);
+}
+
+.table-hover-black-d tr:hover td, .table-hover-black-d-row tr:hover td {
+    background-color: var(--black-d);
+}
+
+.table-hover-black-d-cell td:hover {
+    background-color: var(--black-d);
+}
+
+/*     TÁBLÁZAT HOVER SZÍNEK VÉGE    */
+
+/* Táblázat beállítások */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-bordered-all thead tr th, .table-bordered-all tbody tr td {
+    border: 1px solid black;
+}
+
+.table-bordered-rows{
+    border: 1px solid black;
+}
+
+.table-bordered-rows thead tr th, .table-bordered-rows tbody tr td {
+    border-bottom: 1px solid black;
+}
+.table-text-left *, .table-text-start *{
+    text-align: left;
+}
+
+.table-text-right *, .table-text-end *{
+    text-align: right;
+}
+
+.table-text-center *, .table-text-middle * {
+    text-align: center;
+}
+
+/*
+
+        táblázatok VÉGE
+
+*/
+
+/* FELSOROLÁŰSOK */
+
+.ol-none {
+    list-style-type: none;
+}
+
+.ol-dec {
+    list-style-type: decimal;
+}
+
+.ol-armenian {
+    list-style-type:armenian;
+}
+
+.ol-dec-lead-0 {
+    list-style-type: decimal-leading-zero;
+}
+
+.ol-georgian {
+    list-style-type:georgian;
+}
+
+.ol-lower-alpha{
+    list-style-type:lower-alpha;
+}
+
+.ol-upper-alpha, .ol-alpha{
+    list-style-type: upper-alpha;
+}
+
+.ol-lower-roman{
+    list-style-type:lower-roman;
+}
+
+.ol-upper-roman, .ol-roman{
+    list-style-type:upper-alpha;
+}
+
+.ol-lower-greek{
+    list-style-type:lower-greek;
+}
+
+.ol-upper-greek, .ol-greek{
+    list-style-type:upper-alpha;
+}
+
+.ol-lower-latin{
+    list-style-type:lower-latin;
+}
+
+.ol-upper-latin, .ol-latin{
+    list-style-type:upper-alpha;
+}
+
+.ul-disc {
+    list-style-type: disc;
+}
+
+.ul-circle {
+    list-style-type: circle;
+}
+
+.ul-square {
+    list-style-type:square;
+}
+
+.list-pos-inside {
+    list-style-position: inside;
+}
+
+.list-pos-outside {
+    list-style-position: outside;
+}
+
+/*   LISTÁK VÉGE :)   */
+
+/* DIV RENDEZŐ METÓDUSOK */
+
+.dis-flex {
+    display: flex;
+}
+
+.dis-flexbox {
+    display: flexbox;
+}
+
+.dis-block {
+    display: block;
+}
+
+.dis-grid {
+    display:grid;
+}
+
+.dis-inline {
+    display:inline;
+}
+
+.dis-inline-block {
+    display: inline-block;
+}
+
+.dis-inline-flex {
+    display: inline-flex;
+}
+
+.dis-inline-flexbox {
+    display: inline-flexbox;
+}
+
+.dis-list-item {
+    display:list-item;
+}
+
+.dis-contents {
+    display:contents;
+}
+
+/* pozíciók */
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-static {
+    position: static;
+}
+
+.pos-sticky {
+    position:sticky;
+}
+
+.float-left, .float-start {
+    float: left;
+}
+
+.float-right, .float-end {
+    float: right;
+}
+
+.float-inline-left, .float-inline-start {
+    float: inline-start;
+}
+
+.float-inline-right, .float-inline-end {
+    float: inline-end;
+}
+
+/* 
+    div rendező metódusok vége
+*/
