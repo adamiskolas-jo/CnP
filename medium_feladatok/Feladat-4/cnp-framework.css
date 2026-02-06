@@ -967,10 +967,91 @@
     border: 2px solid var(--grey-d);
     transition: all ease-in-out 0.2s;
     font-size: 1rem;
+    margin: 0 0.1rem;
 }
 
 a.btn:hover {
     font-size: 1.2rem;
+}
+
+.btn-bw-1, .btn-bw-1px {
+    border-width: 1px;
+}
+
+.btn-bw-2, .btn-bw-2px {
+    border-width: 2px;
+}
+
+.btn-bw-3, .btn-bw-3px {
+    border-width: 3px;
+}
+
+.btn-bw-4, .btn-bw-4px {
+    border-width: 4px;
+}
+
+.btn-bw-5, .btn-bw-5px {
+    border-width: 5px;
+}
+
+.btn-bw-6, .btn-bw-6px {
+    border-width: 6px;
+}
+
+.btn-bw-7, .btn-bw-7px {
+    border-width: 7px;
+}
+
+.btn-bw-8, .btn-bw-8px {
+    border-width: 8px;
+}
+
+.btn-bw-9, .btn-bw-9px {
+    border-width: 9px;
+}
+
+.btn-bw-10, .btn-bw-10px {
+    border-width: 10px;
+}
+
+.btn-bw-11, .btn-bw-11px {
+    border-width: 11px;
+}
+
+.btn-bw-12, .btn-bw-12px {
+    border-width: 12px;
+}
+
+.btn-solid, .btn-bs-solid {
+    border-style: solid;
+}
+
+.btn-dotted, .btn-bs-dotted {
+    border-style: dotted;
+}
+
+.btn-double, .btn-bs-double {
+    border-style: double;
+}
+
+.btn-groove, .btn-bs-groove {
+    border-style: groove;
+}
+
+.btn-dashed, .btn-bs-dashed {
+    border-style: dashed;
+}
+
+.btn-hidden, .btn-bs-hidden {
+    border-style:hidden;
+}
+
+.btn-none, .btn-bs-none {
+    border-style: none;
+}
+
+.btn-ridge, .btn-bs-ridge {
+    border-style: ridge;
 }
 
 /*  BTN COLORS */
