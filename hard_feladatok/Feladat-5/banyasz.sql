@@ -1,0 +1,1 @@
+SELECT telepules FROM `telek` order BY allapot="S";
