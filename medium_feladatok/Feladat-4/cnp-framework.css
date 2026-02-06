@@ -1170,46 +1170,55 @@ a.btn-outline-grey:hover {
 a.btn-outline-green {
     color: var(--black-l);
     border-color: var(--green-d);
+    transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-red {
     color: var(--black-l);
     border-color: var(--red-d);
+    transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-light-blue {
     color: var(--black-d);
     border-color: var(--light-blue-d);
+    transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-dark-blue {
     color: var(--white-l);
     border-color: var(--dark-blue-d);
+    transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-purple {
     color: var(--purple-l);
     border-color: var(--purple-d);
+    transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-orange {
     color: var(--black-d);
     border-color: var(--orange-d);
+    transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-pink {
     color: var(--black);
     border-color: var(--pink-d);
+    transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-black {
     color: var(--white);
     border-color: var(--black-d);
+    transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-grey {
     color: var(--black);
     border-color: var(--grey-d);
+    transition: all 0.2s ease-in-out;
 }
 
 
