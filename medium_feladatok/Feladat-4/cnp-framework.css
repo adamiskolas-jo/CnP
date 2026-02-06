@@ -45,8 +45,8 @@
     --red-d: rgb(81, 4, 4);
 
     --green: rgb(108, 233, 59);
-    --green-l: rgb(33, 88, 11);
-    --green-d: rgb(160, 240, 129);
+    --green-l: rgb(160, 240, 129);
+    --green-d: rgb(33, 88, 11);
 
     --light-blue: rgb(24, 218, 224);
     --light-blue-l: rgb(134, 233, 236);
@@ -952,6 +952,49 @@
     float: inline-end;
 }
 
+/*  div rendező metódusok vége  */
+
 /* 
-    div rendező metódusok vége
+        GOMBOOK
+    alap beállítások
 */
+
+.btn {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--black-l);
+    border-radius: 2.5px;
+    border: 2px solid var(--grey-d);
+}
+
+/*  BTN COLORS */
+
+.btn-green {
+    background-color: var(--green-l);
+    color: var(--black-l);
+    border-color: var(--green-d);
+}
+
+.btn-red {
+    background-color: var(--red-l);
+    color: var(--black-d);
+    border-color: var(--red-d);
+}
+
+.btn-light-blue {
+    background-color: var(--light-blue-l);
+    color: var(--black-d);
+    border-color: var(--light-blue-d);
+}
+
+.btn-dark-blue {
+    background-color: var(--dark-blue-l);
+    color: var(--white-l); /*kérdéses*/
+    border-color: var(--dark-blue-d);
+}
+
+.btn-purple {
+    background-color: var(--purple-l);
+    color: var(--black-d);
+    border-color: var(--purple-d);
+}
