@@ -965,6 +965,12 @@
     color: var(--black-l);
     border-radius: 2.5px;
     border: 2px solid var(--grey-d);
+    transition: all ease-in-out 0.2s;
+    font-size: 1rem;
+}
+
+a.btn:hover {
+    font-size: 1.2rem;
 }
 
 /*  BTN COLORS */
@@ -998,3 +1004,35 @@
     color: var(--black-d);
     border-color: var(--purple-d);
 }
+
+.btn-orange {
+    background-color: var(--orange-l);
+    color: var(--black-d);
+    border-color: var(--orange-d);
+}
+
+.btn-pink {
+    background-color: var(--pink-l);
+    color: var(--black);
+    border-color: var(--pink-d);
+}
+
+.btn-white {
+    background-color: var(--white-l);
+    color: var(--black-d);
+    border-color: var(--white-d);
+}
+
+.btn-black {
+    background-color: var(--black-l);
+    color: var(--white);
+    border-color: var(--black-d);
+}
+
+.btn-grey {
+    background-color: var(--grey-l);
+    color: var(--black);
+    border-color: var(--grey-d);
+}
+
+/*  BTN COLORS */
