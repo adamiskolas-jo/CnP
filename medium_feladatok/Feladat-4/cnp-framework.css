@@ -696,6 +696,345 @@
 
 /* a border radius vége */
 
+
+/*
+    border beállítások 
+*/
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-red {
+  border-color: var(--red);
+}
+
+.border-color-red-l {
+  border-color: var(--red-l);
+}
+
+.border-color-red-d {
+  border-color: var(--red-d);
+}
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-green{
+  border-color: var(--green);
+}
+
+.border-color-green-l {
+  border-color: var(--green-l);
+}
+
+.border-color-green-d {
+  border-color: var(--green-d);
+}
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-light-blue {
+  border-color: var(--light-blue);
+}
+
+.border-color-light-blue-l {
+  border-color: var(--light-blue-l);
+}
+
+.border-color-light-blue-d {
+  border-color: var(--light-blue-d);
+}
+
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-fark-blue {
+  border-color: var(--fark-blue);
+}
+
+.border-color-fark-blue-l {
+  border-color: var(--fark-blue-l);
+}
+
+.border-color-fark-blue-d {
+  border-color: var(--fark-blue-d);
+}
+
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-orange {
+  border-color: var(--orange);
+}
+
+.border-color-orange-l {
+  border-color: var(--orange-l);
+}
+
+.border-color-orange-d {
+  border-color: var(--orange-d);
+}
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-pink {
+  border-color: var(--pink);
+}
+
+.border-color-pink-l {
+  border-color: var(--pink-l);
+}
+
+.border-color-pink-d {
+  border-color: var(--pink-d);
+}
+
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-purple {
+  border-color: var(--purple);
+}
+
+.border-color-purple-l {
+  border-color: var(--purple-l);
+}
+
+.border-color-purple-d {
+  border-color: var(--purple-d);
+}
+
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-white {
+  border-color: var(--white);
+}
+
+.border-color-white-l {
+  border-color: var(--white-l);
+}
+
+.border-color-white-d {
+  border-color: var(--white-d);
+}
+
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-grey {
+  border-color: var(--grey);
+}
+
+.border-color-grey-l {
+  border-color: var(--grey-l);
+}
+
+.border-color-grey-d {
+  border-color: var(--grey-d);
+}
+
+.border {
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-color-black {
+  border-color: var(--black);
+}
+
+.border-color-black-l {
+  border-color: var(--black-l);
+}
+
+.border-color-black-d {
+  border-color: var(--black-d);
+}
+
+/* Innentől már a vastagsága a vonalnak */
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+/* Border stílus */
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+/* Innentől már a vastagsága a vonalnak */
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+/* Border stílus */
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+/* Innentől már a vastagsága a vonalnak */
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+/* Border stílus */
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+/* Innentől már a vastagsága a vonalnak */
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+/* Border stílus */
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+/* Innentől már a vastagsága a vonalnak */
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+/* Border stílus */
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+
+/* Innentől már a vastagsága a vonalnak */
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+/* Border stílus */
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+/* Innentől már a vastagsága a vonalnak */
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+/* Border stílus */
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+
+/* Innentől már a vastagsága a vonalnak */
+
+.border-w-2px {
+  border-width: 2px;
+}
+
+.border-w-3px {
+  border-width: 3px;
+}
+
+
+/* Border stílus */
+
+.border-solid, .border-st-solid {
+  border-style: solid;
+}
+/* vége a border beállítások */
+
 /*
 
 >>>>        Táblázat SZÍNEK 
