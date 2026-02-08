@@ -1519,3 +1519,228 @@ a.btn-outline-grey:hover {
 }
 
 /* BUTTONS END */
+/* 
+    FORMS 
+*/
+
+form {
+    background-color: var(--white-l);
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid var(--grey-l);
+    margin: 1.5rem;
+}
+
+label {
+    display: block;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid var(--grey-l);
+    border-radius: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 14px;
+    border-radius: 5px;
+    background-color: var(--green-l);
+    border: 2px solid var(--green-d);
+    color: var(--white-l);
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit].btn {
+    padding: 5px;
+    margin: 0 0.1rem;
+    border-radius: 2.5px;
+    font-size: 1rem;
+    border: 2px solid var(--grey-d);
+    color: var(--black-l);
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
+
+input[type=submit].btn-submit-green {
+    background-color: var(--green-l);
+    color: var(--black-l);
+    border-color: var(--green-d);
+}
+
+input[type=submit].btn-submit-red {
+    background-color: var(--red-l);
+    color: var(--black-d);
+    border-color: var(--red-d);
+}
+
+input[type=submit].btn-submit-light-blue {
+    background-color: var(--light-blue-l);
+    color: var(--black-d);
+    border-color: var(--light-blue-d);
+}
+
+input[type=submit].btn-submit-dark-blue {
+    background-color: var(--dark-blue-l);
+    color: var(--white-l); /*kérdéses*/
+    border-color: var(--dark-blue-d);
+}
+
+input[type=submit].btn-submit-purple {
+    background-color: var(--purple-l);
+    color: var(--black-d);
+    border-color: var(--purple-d);
+}
+
+input[type=submit].btn-submit-orange {
+    background-color: var(--orange-l);
+    color: var(--black-d);
+    border-color: var(--orange-d);
+}
+
+input[type=submit].btn-submit-pink {
+    background-color: var(--pink-l);
+    color: var(--black);
+    border-color: var(--pink-d);
+}
+
+input[type=submit].btn-submit-white {
+    background-color: var(--white-l);
+    color: var(--black-d);
+    border-color: var(--white-d);
+}
+
+input[type=submit].btn-submit-black {
+    background-color: var(--black-l);
+    color: var(--white);
+    border-color: var(--black-d);
+}
+
+input[type=submit].btn-submit-grey {
+    background-color: var(--grey-l);
+    color: var(--black);
+    border-color: var(--grey-d);
+}
+
+/* btn outline színek */
+
+input[type=submit].btn-outline-green {
+    background-color: transparent;
+    color: var(--black-l);
+    border-color: var(--green-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-red {
+    background-color: transparent;
+    color: var(--black-l);
+    border-color: var(--red-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-light-blue {
+    background-color: transparent;
+    color: var(--black-d);
+    border-color: var(--light-blue-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-dark-blue {
+    background-color: transparent;
+    color: var(--white-l);
+    border-color: var(--dark-blue-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-purple {
+    background-color: transparent;
+    color: var(--purple-l);
+    border-color: var(--purple-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-orange {
+    background-color: transparent;
+    color: var(--black-d);
+    border-color: var(--orange-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-pink {
+    background-color: transparent;
+    color: var(--black);
+    border-color: var(--pink-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-black {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--black-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-grey {
+    background-color: transparent;
+    color: var(--black);
+    border-color: var(--grey-d);
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit].btn-outline-white {
+    background-color: transparent;
+    color: var(--black-d);
+    border-color: var(--white-d);
+    transition: all 0.2s ease-in-out;
+}
+
+/* btn outline színek hover */
+
+input[type=submit].btn-outline-green:hover {
+    background-color: var(--green-l);
+}
+
+input[type=submit].btn-outline-red:hover {
+    background-color: var(--red-l);
+}
+
+input[type=submit].btn-outline-light-blue:hover {
+    background-color: var(--light-blue-l);
+}
+
+input[type=submit].btn-outline-dark-blue:hover { 
+    background-color: var(--dark-blue-l);
+}
+
+input[type=submit].btn-outline-purple:hover {
+    background-color: var(--purple-l);
+}
+
+input[type=submit].btn-outline-orange:hover {   
+    background-color: var(--orange-l);
+}
+
+input[type=submit].btn-outline-pink:hover {
+    background-color: var(--pink-l);
+}
+
+input[type=submit].btn-outline-white:hover {
+    background-color: var(--white-l);
+
+}
+
+input[type=submit].btn-outline-black:hover {
+    background-color: var(--black-l);
+
+}
+
+input[type=submit].btn-outline-grey:hover {
+    background-color: var(--grey-l);
+
+}
