@@ -528,6 +528,26 @@
 /* BELSŐ MARGÓK VÉGEEEEEE */
 
 /*
+        HÁTTÉRSZÍNEK
+*/
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-red-l, .bg-red-light, .bg-red-lighter {
+    background-color: var(--red-l);
+}
+
+.bg-red-d, .bg-red-dark, .bg-red-darker {
+    background-color: var(--red-d);
+}
+
+/*       Háttérszínek vége       */
+
+
+
+/*
 
 >>>>        Táblázat SZÍNEK 
 
