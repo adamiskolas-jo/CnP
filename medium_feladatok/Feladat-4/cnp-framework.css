@@ -559,6 +559,137 @@
 
 /* BELSŐ MARGÓK VÉGEEEEEE */
 
+/* border radius */
+.border-r-1, .border-radius-1, .border-r-1px, .border-radius-1px {
+    border-radius: 1px;
+}
+
+.border-r-2, .border-radius-2, .border-r-2px, .border-radius-2px {
+    border-radius: 2px;
+}
+
+.border-r-3, .border-radius-3, .border-r-3px, .border-radius-3px {
+    border-radius: 3px;
+}
+
+.border-r-4, .border-radius-4, .border-r-4px, .border-radius-4px {
+    border-radius: 4px;
+}
+
+.border-r-5, .border-radius-5, .border-r-5px, .border-radius-5px {
+    border-radius: 5px;
+}
+
+.border-r-6, .border-radius-6, .border-r-6px, .border-radius-6px {
+    border-radius: 6px;
+}
+
+.border-r-7, .border-radius-7, .border-r-7px, .border-radius-7px {
+    border-radius: 7px;
+}
+
+.border-r-8, .border-radius-8, .border-r-8px, .border-radius-8px {
+    border-radius: 8px;
+}
+
+.border-r-9, .border-radius-9, .border-r-9px, .border-radius-9px {
+    border-radius: 9px;
+}
+
+.border-r-10, .border-radius-10, .border-r-10px, .border-radius-10px {
+    border-radius: 10px;
+}
+
+.border-r-11, .border-radius-11, .border-r-11px, .border-radius-11px {
+    border-radius: 11px;
+}
+
+.border-r-12, .border-radius-12, .border-r-12px, .border-radius-12px {
+    border-radius: 12px;
+}
+
+.border-r-13, .border-radius-13, .border-r-13px, .border-radius-13px {
+    border-radius: 13px;
+}
+
+.border-r-14, .border-radius-14, .border-r-14px, .border-radius-14px {
+    border-radius: 14px;
+}
+
+.border-r-15, .border-radius-15, .border-r-15px, .border-radius-15px {
+    border-radius: 15px;
+}
+
+.border-r-16, .border-radius-16, .border-r-16px, .border-radius-16px {
+    border-radius: 16px;
+}
+
+.border-r-17, .border-radius-17, .border-r-17px, .border-radius-17px {
+    border-radius: 17px;
+}
+
+.border-r-18, .border-radius-18, .border-r-18px, .border-radius-18px {
+    border-radius: 18px;
+}
+
+.border-r-19, .border-radius-19, .border-r-19px, .border-radius-19px {
+    border-radius: 19px;
+}
+
+.border-r-20, .border-radius-20, .border-r-20px, .border-radius-20px {
+    border-radius: 20px;
+}
+
+.border-r-21, .border-radius-21, .border-r-21px, .border-radius-21px {
+    border-radius: 21px;
+}
+
+.border-r-22, .border-radius-22, .border-r-22px, .border-radius-22px {
+    border-radius: 22px;
+}
+
+.border-r-23, .border-radius-23, .border-r-23px, .border-radius-23px {
+    border-radius: 23px;
+}
+
+.border-r-24, .border-radius-24, .border-r-24px, .border-radius-24px {
+    border-radius: 24px;
+}
+
+.border-r-25, .border-radius-25, .border-r-25px, .border-radius-25px {
+    border-radius: 25px;
+}
+
+.border-r-26, .border-radius-26, .border-r-26px, .border-radius-26px {
+    border-radius: 26px;
+}
+
+.border-r-27, .border-radius-27, .border-r-27px, .border-radius-27px {
+    border-radius: 27px;
+}
+
+.border-r-28, .border-radius-28, .border-r-28px, .border-radius-28px {
+    border-radius: 28px;
+}
+
+.border-r-29, .border-radius-29, .border-r-29px, .border-radius-29px {
+    border-radius: 29px;
+}
+
+.border-r-30, .border-radius-30, .border-r-30px, .border-radius-30px {
+    border-radius: 30px;
+}
+
+.border-r-31, .border-radius-31, .border-r-31px, .border-radius-31px {
+    border-radius: 31px;
+}
+
+.border-r-32, .border-radius-32, .border-r-32px, .border-radius-32px {
+    border-radius: 32px;
+}
+
+/* a border radius vége */
+
 /*
         HÁTTÉRSZÍNEK
 */
