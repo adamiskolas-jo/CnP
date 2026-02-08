@@ -718,24 +718,6 @@
   border-color: var(--red-d);
 }
 
-.border-w-2px {
-  border-width: 2px;
-}
-
-.border-w-3px {
-  border-width: 3px;
-}
-
-.border-solid, .border-st-solid {
-  border-style: solid;
-}
-
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
-}
-
 .border-color-green{
   border-color: var(--green);
 }
@@ -746,24 +728,6 @@
 
 .border-color-green-d {
   border-color: var(--green-d);
-}
-
-.border-w-2px {
-  border-width: 2px;
-}
-
-.border-w-3px {
-  border-width: 3px;
-}
-
-
-.border-solid, .border-st-solid {
-  border-style: solid;
-}
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
 }
 
 .border-color-light-blue {
@@ -778,28 +742,16 @@
   border-color: var(--light-blue-d);
 }
 
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
+.border-color-dark-blue {
+  border-color: var(--dark-blue);
 }
 
-.border-color-fark-blue {
-  border-color: var(--fark-blue);
+.border-color-dark-blue-l {
+  border-color: var(--dark-blue-l);
 }
 
-.border-color-fark-blue-l {
-  border-color: var(--fark-blue-l);
-}
-
-.border-color-fark-blue-d {
-  border-color: var(--fark-blue-d);
-}
-
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
+.border-color-dark-blue-d {
+  border-color: var(--dark-blue-d);
 }
 
 .border-color-orange {
@@ -812,11 +764,6 @@
 
 .border-color-orange-d {
   border-color: var(--orange-d);
-}
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
 }
 
 .border-color-pink {
@@ -831,12 +778,6 @@
   border-color: var(--pink-d);
 }
 
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
-}
-
 .border-color-purple {
   border-color: var(--purple);
 }
@@ -847,12 +788,6 @@
 
 .border-color-purple-d {
   border-color: var(--purple-d);
-}
-
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
 }
 
 .border-color-white {
@@ -867,12 +802,6 @@
   border-color: var(--white-d);
 }
 
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
-}
-
 .border-color-grey {
   border-color: var(--grey);
 }
@@ -883,12 +812,6 @@
 
 .border-color-grey-d {
   border-color: var(--grey-d);
-}
-
-.border {
-  border-color: var(--black);
-  border-width: 1px;
-  border-style: solid;
 }
 
 .border-color-black {
@@ -913,121 +836,57 @@
   border-width: 3px;
 }
 
-
-/* Border stílus */
-
-.border-solid, .border-st-solid {
-  border-style: solid;
-}
-/* Innentől már a vastagsága a vonalnak */
-
-.border-w-2px {
-  border-width: 2px;
+.border-w-4px {
+  border-width: 4px;
 }
 
-.border-w-3px {
-  border-width: 3px;
+.border-w-5px {
+  border-width: 5px;
 }
 
-
-/* Border stílus */
-
-.border-solid, .border-st-solid {
-  border-style: solid;
-}
-/* Innentől már a vastagsága a vonalnak */
-
-.border-w-2px {
-  border-width: 2px;
+.border-w-6px {
+  border-width: 6px;
 }
 
-.border-w-3px {
-  border-width: 3px;
+.border-w-7px {
+  border-width: 7px;
 }
 
-
-/* Border stílus */
-
-.border-solid, .border-st-solid {
-  border-style: solid;
-}
-/* Innentől már a vastagsága a vonalnak */
-
-.border-w-2px {
-  border-width: 2px;
+.border-w-8px {
+  border-width: 8px;
 }
 
-.border-w-3px {
-  border-width: 3px;
+.border-w-9px {
+  border-width: 9px;
 }
 
-
-/* Border stílus */
-
-.border-solid, .border-st-solid {
-  border-style: solid;
-}
-/* Innentől már a vastagsága a vonalnak */
-
-.border-w-2px {
-  border-width: 2px;
+.border-w-10px {
+  border-width: 10px;
 }
 
-.border-w-3px {
-  border-width: 3px;
+.border-w-11px {
+  border-width: 11px;
 }
 
-
-/* Border stílus */
-
-.border-solid, .border-st-solid {
-  border-style: solid;
+.border-w-12px {
+  border-width: 12px;
 }
 
-/* Innentől már a vastagsága a vonalnak */
-
-.border-w-2px {
-  border-width: 2px;
+.border-w-13px {
+  border-width: 13px;
 }
 
-.border-w-3px {
-  border-width: 3px;
+.border-w-14px {
+  border-width: 14px;
 }
 
-
-/* Border stílus */
-
-.border-solid, .border-st-solid {
-  border-style: solid;
-}
-/* Innentől már a vastagsága a vonalnak */
-
-.border-w-2px {
-  border-width: 2px;
+.border-w-15px {
+  border-width: 15px;
 }
 
-.border-w-3px {
-  border-width: 3px;
+.border-w-16px {
+  border-width: 16px;
 }
-
-
-/* Border stílus */
-
-.border-solid, .border-st-solid {
-  border-style: solid;
-}
-
-/* Innentől már a vastagsága a vonalnak */
-
-.border-w-2px {
-  border-width: 2px;
-}
-
-.border-w-3px {
-  border-width: 3px;
-}
-
-
 /* Border stílus */
 
 .border-solid, .border-st-solid {
