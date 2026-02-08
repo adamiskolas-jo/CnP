@@ -279,14 +279,14 @@
 .bg-white-d, .bg-white-dark .bg-white-darker {
     background-color: var(--white-d);
 }
-.bg-gray{
-    background-color: var(--gray);
+.bg-grey{
+    background-color: var(--grey);
 }
-.bg-gray-l, .bg-gray-light .bg-gray-lighter {
-    background-color: var(--gray-l);
+.bg-grey-l, .bg-grey-light .bg-grey-lighter {
+    background-color: var(--grey-l);
 }
-.bg-gray-d, .bg-gray-dark .bg-gray-darker {
-    background-color: var(--gray-d);
+.bg-grey-d, .bg-grey-dark .bg-grey-darker {
+    background-color: var(--grey-d);
 }
 .bg-black{
     background-color: var(--black);
