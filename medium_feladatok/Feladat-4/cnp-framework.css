@@ -194,6 +194,104 @@
 
 /* a responsivity vége jó kis hunglish */
 
+/*
+    Háttérszínek
+*/
+
+.bg-red{
+    background-color: var(--red);
+}
+.bg-red-l, .bg-red-light .bg-red-lighter {
+    background-color: var(--red-l);
+}
+.bg-red-d, .bg-red-dark .bg-red-darker {
+    background-color: var(--red-d);
+}
+
+.bg-green{
+    background-color: var(--green);
+}
+.bg-green-l, .bg-green-light .bg-green-lighter {
+    background-color: var(--green-l);
+}
+.bg-green-d, .bg-green-dark .bg-green-darker {
+    background-color: var(--green-d);
+}
+
+.bg-light-blue{
+    background-color: var(--light-blue);
+}
+.bg-light-blue-l, .bg-light-blue-light .bg-light-blue-lighter {
+    background-color: var(--light-blue-l);
+}
+.bg-light-blue-d, .bg-light-blue-dark .bg-light-blue-darker {
+    background-color: var(--light-blue-d);
+}
+
+.bg-dark-blue{
+    background-color: var(--dark-blue);
+}
+.bg-dark-blue-l, .bg-dark-blue-light .bg-dark-blue-lighter {
+    background-color: var(--dark-blue-l);
+}
+.bg-dark-blue-d, .bg-dark-blue-dark .bg-dark-blue-darker {
+    background-color: var(--dark-blue-d);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.bg-orange-l, .bg-orange-light .bg-orange-lighter {
+    background-color: var(--orange-l);
+}
+.bg-orange-d, .bg-orange-dark .bg-orange-darker {
+    background-color: var(--orange-d);
+}
+.bg-purple{
+    background-color: var(--purple);
+}
+.bg-purple-l, .bg-purple-light .bg-purple-lighter {
+    background-color: var(--purple-l);
+}
+.bg-purple-d, .bg-purple-dark .bg-purple-darker {
+    background-color: var(--purple-d);
+}
+.bg-pink{
+    background-color: var(--pink);
+}
+.bg-pink-l, .bg-pink-light .bg-pink-lighter {
+    background-color: var(--pink-l);
+}
+.bg-pink-d, .bg-pink-dark .bg-pink-darker {
+    background-color: var(--pink-d);
+}
+.bg-white{
+    background-color: var(--white);
+}
+.bg-white-l, .bg-white-light .bg-white-lighter {
+    background-color: var(--white-l);
+}
+.bg-white-d, .bg-white-dark .bg-white-darker {
+    background-color: var(--white-d);
+}
+.bg-gray{
+    background-color: var(--gray);
+}
+.bg-gray-l, .bg-gray-light .bg-gray-lighter {
+    background-color: var(--gray-l);
+}
+.bg-gray-d, .bg-gray-dark .bg-gray-darker {
+    background-color: var(--gray-d);
+}
+.bg-black{
+    background-color: var(--black);
+}
+.bg-black-l, .bg-black-light .bg-black-lighter {
+    background-color: var(--black-l);
+}
+.bg-black-d, .bg-black-dark .bg-black-darker {
+    background-color: var(--black-d);
+}
+/* Háttérszínek vége */
 
 /* Text stuff */
 
