@@ -1234,57 +1234,10 @@ a.btn:hover {
     border-color: var(--grey-d);
 }
 
-
-
-
-a.btn-outline-green:hover {
-    background-color: var(--green-l);
-}
-
-a.btn-outline-red:hover {
-    background-color: var(--red-l);
-}
-
-a.btn-outline-light-blue:hover {
-    background-color: var(--light-blue-l);
-}
-
-a.btn-outline-dark-blue:hover { 
-    background-color: var(--dark-blue-l);
-}
-
-a.btn-outline-purple:hover {
-    background-color: var(--purple-l);
-}
-
-a.btn-outline-orange:hover {   
-    background-color: var(--orange-l);
-}
-
-a.btn-outline-pink:hover {
-    background-color: var(--pink-l);
-}
-
-a.btn-outline-white:hover {
-    background-color: var(--white-l);
-
-}
-
-a.btn-outline-black:hover {
-    background-color: var(--black-l);
-
-}
-
-a.btn-outline-grey:hover {
-    background-color: var(--grey-l);
-
-}
-
-
-
-
-
-
+/*  BTN COLORS end */
+/* 
+        BTN OUTLINE COLORS
+*/
 a.btn-outline-green {
     color: var(--black-l);
     border-color: var(--green-d);
@@ -1345,5 +1298,51 @@ a.btn-outline-white {
     transition: all 0.2s ease-in-out;
 }
 
+/* 
+        BTN OUTLINE COLORS HOVER
+*/
 
-/*  BTN COLORS */
+a.btn-outline-green:hover {
+    background-color: var(--green-l);
+}
+
+a.btn-outline-red:hover {
+    background-color: var(--red-l);
+}
+
+a.btn-outline-light-blue:hover {
+    background-color: var(--light-blue-l);
+}
+
+a.btn-outline-dark-blue:hover { 
+    background-color: var(--dark-blue-l);
+}
+
+a.btn-outline-purple:hover {
+    background-color: var(--purple-l);
+}
+
+a.btn-outline-orange:hover {   
+    background-color: var(--orange-l);
+}
+
+a.btn-outline-pink:hover {
+    background-color: var(--pink-l);
+}
+
+a.btn-outline-white:hover {
+    background-color: var(--white-l);
+
+}
+
+a.btn-outline-black:hover {
+    background-color: var(--black-l);
+
+}
+
+a.btn-outline-grey:hover {
+    background-color: var(--grey-l);
+
+}
+
+/* BUTTONS END */
