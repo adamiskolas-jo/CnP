@@ -313,6 +313,10 @@
 
 /* MARGÓK */
 
+.margin-0, .margin-0rem {
+    margin: 0;
+}
+
 .margin-1rem {
     margin: 1rem;
 }
@@ -333,6 +337,9 @@
     margin: 5rem;
 }
 
+.margin-start-0rem, .margin-left-0rem, .margin-end-0rem, .margin-right-0rem {
+    margin-left: 0rem;
+}
 
 .margin-start-1rem, .margin-left-1rem {
     margin-left: 1rem;
@@ -354,6 +361,9 @@
     margin-left: 5rem;
 }
 
+.margin-end-0rem, .margin-right-0rem, .margin-end-0, .margin-right-0 {
+    margin-right: 0rem;
+}
 
 .margin-end-1rem, .margin-right-1rem {
     margin-right: 1rem;
@@ -375,6 +385,9 @@
     margin-right: 5rem;
 }
 
+.margin-top-0rem, .margin-top-0 {
+    margin-top: 0rem;
+}
 
 .margin-top-1rem {
     margin-top: 1rem;
@@ -396,6 +409,9 @@
     margin-top: 5rem;
 }
 
+.margin-bottom-0rem, .margin-bottom-0 {
+    margin-bottom: 0rem;
+}
 
 .margin-bottom-1rem {
     margin-bottom: 1rem;
@@ -421,6 +437,10 @@
 
 /* BELSŐ MARGÓK */
 
+.padding-0rem, .padding-0 {
+    padding: 0;
+}
+
 .padding-1rem {
     padding: 1rem;
 }
@@ -441,6 +461,9 @@
     padding: 5rem;
 }
 
+.padding-start-0rem, .padding-left-0rem, .padding-start-0, .padding-left-0{
+    padding-left: 0rem;
+}
 
 .padding-start-1rem, .padding-left-1rem {
     padding-left: 1rem;
@@ -462,6 +485,9 @@
     padding-left: 5rem;
 }
 
+.padding-end-0rem, .padding-right-0rem, .padding-end-0, .padding-right-0{
+    padding-right: 0rem;
+}
 
 .padding-end-1rem, .padding-right-1rem {
     padding-right: 1rem;
@@ -483,6 +509,9 @@
     padding-right: 5rem;
 }
 
+.padding-top-0, .padding-top-0rem {
+    padding-top: 0rem;
+}
 
 .padding-top-1rem {
     padding-top: 1rem;
@@ -504,6 +533,9 @@
     padding-top: 5rem;
 }
 
+.padding-bottom-0, .padding-bottom-0rem {
+    padding-bottom: 0rem;
+}
 
 .padding-bottom-1rem {
     padding-bottom: 1rem;
@@ -1239,60 +1271,70 @@ a.btn:hover {
         BTN OUTLINE COLORS
 */
 a.btn-outline-green {
+    background-color: transparent;
     color: var(--black-l);
     border-color: var(--green-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-red {
+    background-color: transparent;
     color: var(--black-l);
     border-color: var(--red-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-light-blue {
+    background-color: transparent;
     color: var(--black-d);
     border-color: var(--light-blue-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-dark-blue {
+    background-color: transparent;
     color: var(--white-l);
     border-color: var(--dark-blue-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-purple {
+    background-color: transparent;
     color: var(--purple-l);
     border-color: var(--purple-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-orange {
+    background-color: transparent;
     color: var(--black-d);
     border-color: var(--orange-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-pink {
+    background-color: transparent;
     color: var(--black);
     border-color: var(--pink-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-black {
+    background-color: transparent;
     color: var(--white);
     border-color: var(--black-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-grey {
+    background-color: transparent;
     color: var(--black);
     border-color: var(--grey-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-white {
+    background-color: transparent;
     color: var(--black-d);
     border-color: var(--white-d);
     transition: all 0.2s ease-in-out;
