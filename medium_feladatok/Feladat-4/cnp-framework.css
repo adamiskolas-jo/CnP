@@ -691,26 +691,6 @@
 /* a border radius vége */
 
 /*
-        HÁTTÉRSZÍNEK
-*/
-
-.bg-red {
-    background-color: var(--red);
-}
-
-.bg-red-l, .bg-red-light, .bg-red-lighter {
-    background-color: var(--red-l);
-}
-
-.bg-red-d, .bg-red-dark, .bg-red-darker {
-    background-color: var(--red-d);
-}
-
-/*       Háttérszínek vége       */
-
-
-
-/*
 
 >>>>        Táblázat SZÍNEK 
 
@@ -1249,6 +1229,60 @@
     transition: all ease-in-out 0.2s;
     font-size: 1rem;
     margin: 0 0.1rem;
+}
+
+.btn-sm {
+    font-size: 0.5rem;
+    padding: 2.5px;
+}
+
+.btn-m {
+    font-size: 0.75rem;
+    padding: 4.75px;
+}
+
+.btn-l {
+    font-size: 1.5rem;
+    padding: 7.5px;
+}
+
+.btn-xl {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.btn-xxl {
+    font-size: 2.5rem;
+    padding: 12.5px;
+}
+
+.btn-xxxl {
+    font-size: 3rem;
+    padding: 15px;
+}
+
+a.btn-sm:hover {
+    font-size: 0.6rem;
+}
+
+a.btn-m:hover {
+    font-size: 0.9rem;
+}
+
+a.btn-l:hover {
+    font-size: 1.8rem;
+}
+
+a.btn-xl:hover {
+    font-size: 2.4rem;
+}
+
+a.btn-xxl:hover {
+    font-size: 3rem;
+}
+
+a.btn-xxxl:hover {
+    font-size: 3.6rem;
 }
 
 a.btn:hover {
