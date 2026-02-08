@@ -1339,5 +1339,11 @@ a.btn-outline-grey {
     transition: all 0.2s ease-in-out;
 }
 
+a.btn-outline-white {
+    color: var(--black-d);
+    border-color: var(--white-d);
+    transition: all 0.2s ease-in-out;
+}
+
 
 /*  BTN COLORS */
