@@ -368,9 +368,213 @@
     text-align: right;
 }
 
+.text-justify, .szoveg-sortkizart {
+    text-align: justify;
+}
+
+.text-inherit, .szoveg-orokol {
+    text-align: inherit;
+}
+
 /* vége Text stuff */
 
+/*
+     Szöveg színek
+*/
 
+.text-red {
+    color: var(--red);
+}
+
+.text-red-l,
+.text-red-light .text-red-lighter {
+    color: var(--red-l);
+}
+
+.text-red-d,
+.text-red-dark .text-red-darker {
+    color: var(--red-d);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-green-l,
+.text-green-light .text-green-lighter {
+    color: var(--green-l);
+}
+
+.text-green-d,
+.text-green-dark .text-green-darker {
+    color: var(--green-d);
+}
+
+.text-light-blue {
+    color: var(--light-blue);
+}
+
+.text-light-blue-l,
+.text-light-blue-light .text-light-blue-lighter {
+    color: var(--light-blue-l);
+}
+
+.text-light-blue-d,
+.text-light-blue-dark .text-light-blue-darker {
+    color: var(--light-blue-d);
+}
+
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+
+.text-dark-blue-l,
+.text-dark-blue-light .text-dark-blue-lighter {
+    color: var(--dark-blue-l);
+}
+
+.text-dark-blue-d,
+.text-dark-blue-dark .text-dark-blue-darker {
+    color: var(--dark-blue-d);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-orange-l,
+.text-orange-light .text-orange-lighter {
+    color: var(--orange-l);
+}
+
+.text-orange-d,
+.text-orange-dark .text-orange-darker {
+    color: var(--orange-d);
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.text-purple-l,
+.text-purple-light .text-purple-lighter {
+    color: var(--purple-l);
+}
+
+.text-purple-d,
+.text-purple-dark .text-purple-darker {
+    color: var(--purple-d);
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.text-pink-l,
+.text-pink-light .text-pink-lighter {
+    color: var(--pink-l);
+}
+
+.text-pink-d,
+.text-pink-dark .text-pink-darker {
+    color: var(--pink-d);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-white-l,
+.text-white-light .text-white-lighter {
+    color: var(--white-l);
+}
+
+.text-white-d,
+.text-white-dark .text-white-darker {
+    color: var(--white-d);
+}
+
+.text-grey {
+    color: var(--grey);
+}
+
+.text-grey-l,
+.text-grey-light .text-grey-lighter {
+    color: var(--grey-l);
+}
+
+.text-grey-d,
+.text-grey-dark .text-grey-darker {
+    color: var(--grey-d);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-black-l,
+.text-black-light .text-black-lighter {
+    color: var(--black-l);
+}
+
+.text-black-d,
+.text-black-dark .text-black-darker {
+    color: var(--black-d);
+}
+/* Szöveg színek vége */
+
+/*
+    Font sizing
+*/
+
+.fs-125 {
+    font-size: 125%;
+}
+
+.fs-150 {
+    font-size: 150%;
+}
+
+.fs-175 {
+    font-size: 175%;
+}
+
+.fs-200 {
+    font-size: 200%;
+}
+
+.fs-225 {
+    font-size: 225%;
+}
+
+.fs-250 {
+    font-size: 250%;
+}
+
+.fs-275 {
+    font-size: 275%;
+}
+
+.fs-300 {
+    font-size: 300%;
+}
+
+.fs-325 {
+    font-size: 325%;
+}
+
+.fs-350 {
+    font-size: 350%;
+}
+
+.fs-375 {
+    font-size: 375%;
+}
+
+.fs-400 {
+    font-size: 400%;
+}
+/* End of font sizing */
 
 /* MARGÓK */
 
@@ -2006,11 +2210,11 @@ a.btn-m:hover {
 }
 
 a.btn-l:hover {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
 }
 
 a.btn-xl:hover {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
 }
 
 a.btn-xxl:hover {
@@ -2021,8 +2225,8 @@ a.btn-xxxl:hover {
     font-size: 3.6rem;
 }
 
-a.btn:hover {
-    font-size: 1.2rem;
+a.btn-hover:hover {
+    font-size: 1.5rem;
 }
 
 .btn-bw-1,
@@ -2214,14 +2418,14 @@ a.btn-outline-light-blue {
 
 a.btn-outline-dark-blue {
     background-color: transparent;
-    color: var(--white-l);
+    color: var(--dark-blue-d);
     border-color: var(--dark-blue-d);
     transition: all 0.2s ease-in-out;
 }
 
 a.btn-outline-purple {
     background-color: transparent;
-    color: var(--purple-l);
+    color: var(--purple-d);
     border-color: var(--purple-d);
     transition: all 0.2s ease-in-out;
 }
