@@ -183,7 +183,7 @@
     .col-xl-10{ width: calc(100% / 12 * 10 - 20px); }
     .col-xl-11{ width: calc(100% / 12 * 11 - 20px); }
     .col-xl-12{ width: calc(100% / 12 * 12 - 20px); }
-}
+} 
 
 @media only screen and (min-width:1400px){
     .col-xxl-1{ width: calc(100% / 12 * 1 - 20px); }
