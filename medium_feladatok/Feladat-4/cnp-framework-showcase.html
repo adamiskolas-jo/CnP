@@ -1,96 +1,212 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commit & Pray Keretrendszer</title>
-    <link rel="stylesheet" href="./cnp-framework.css">
-    <link rel="shortcut icon" type="image/x-icon" href="https://ceg.atanarur.hu/cnp/logo.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CnP Framework – Teljes körű bemutató</title>
+
+  <!-- CnP Framework -->
+  <link rel="stylesheet" href="./cnp-framework.css">
+
+  <style>
+    body { background: var(--white-l); }
+    .demo-box { border: 1px dashed var(--grey); padding: 1rem; margin: 1.5rem 0; }
+  </style>
 </head>
 <body>
-    <div class="container bg-grey-l">
-        <div class="row">
-            <h1>Commit & Pray Keretrendszer bemutatása</h1>
-                <table class="table table-padding-5px table-light-blue table-hover-orange-l table-text-middle table-bordered-all ">
-                    <thead>
-                        <tr>
-                            <th>1</th>
-                            <th>2</th>
-                            <th>3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                    </tbody>
-                    <tfooter>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                    </tfooter>
-                </table>
-                 <table class="table table-padding-5px table-red table-hover-pink-l-cell table-text-middle table-bordered-all margin-top-2rem">
-                    <thead>
-                        <tr>
-                            <th>1</th>
-                            <th>2</th>
-                            <th>3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                    </tbody>
-                    <tfooter>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                    </tfooter>
-                </table>
-                <ol class="ol-lower-latin">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                </ol>
 
-                <div class="margin-2rem"></div>
-                <a href="#" class="btn btn-hover btn-ridge btn-bw-12 btn-grey">1, An example button</a>
-                <a href="#" class="btn btn-hover btn-groove btn-bw-12 btn-grey">1, An example button</a>
+<div class="container">
 
-                <a href="#" class="btn btn-groove btn-outline-grey">1, An example button</a>
-<form action="/action_page.php">
-  <label for="fname">First Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <h1 class="text-center my-4 fs-300 text-black-l">Commit & Pray Framework – Teljes körű bemutató</h1>
+  <p class="text-center mb-5 fs-150">Ez az oldal a CnP Framework <br> szinte összes fontos funkcióját bemutatja – kizárólag a keretrendszerben ténylegesen létező osztályokkal.</p>
 
-  <label for="lname">Last Name</label>
-  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-  <label for="country">Country</label>
-  <select id="country" name="country">
-    <option value="australia">Australia</option>
-    <option value="canada">Canada</option>
-    <option value="usa">USA</option>
-  </select>
-  
-  <input type="submit" value="Submit" class="btn btn-outline-green">
-</form>
-
-
-
-            </div>
-        </div>
+  <!-- RESZPONZIVITÁS -->
+  <h2>Reszponzivitás – Grid rendszer</h2>
+  <p>A col-* osztályok segítségével különböző kijelzőméreteken eltérő oszlopszélesség érhető el.</p>
+  <div class="demo-box">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 bg-light-blue p-2 border text-center">col-12 col-sm-6 col-md-4</div>
+      <div class="col-12 col-sm-6 col-md-4 bg-green p-2 border text-center">col-12 col-sm-6 col-md-4</div>
+      <div class="col-12 col-sm-12 col-md-4 bg-orange p-2 border text-center">col-12 col-sm-12 col-md-4</div>
     </div>
+  </div>
+
+  <!-- SZÖVEGIGAZÍTÁS -->
+  <h2>Szövegigazítás</h2>
+  <div class="demo-box">
+    <p class="text-left">Balra igazított szöveg (.text-left)</p>
+    <p class="text-center">Középre igazított szöveg (.text-center)</p>
+    <p class="text-right">Jobbra igazított szöveg (.text-right)</p>
+  </div>
+
+  <!-- SZÖVEGMÉRET -->
+  <h2>Szövegnagyítás (fs-*)</h2>
+  <div class="demo-box">
+    <p>Normál szöveg – <span class="fs-150">fs-150 (150%)</span> – <span class="fs-300">fs-300 (300%)</span></p>
+    <p class="text-grey">Az fs-* osztályok 125–400% között skálázzák a szöveg méretét.</p>
+  </div>
+
+  <!-- SZÍNEK -->
+  <h2>Alapszínek és variációk</h2>
+  <p class="mb-2">A háttérszínek (.bg-*) és a szövegszínek (.text-*) azonos szintaxissal működnek. <br>Példa: <b>.bg-orange-lighter</b> ↔ <b>.text-orange-lighter</b></p>
+
+  <div class="demo-box">
+    <h4>Alapszínek</h4>
+    <div class="row">
+      <div class="col-3 bg-red p-2 text-center">red</div>
+      <div class="col-3 bg-green p-2 text-center">green</div>
+      <div class="col-3 bg-light-blue p-2 text-center">light-blue</div>
+      <div class="col-3 bg-dark-blue p-2 text-center">dark-blue</div>
+      <div class="col-3 bg-orange p-2 text-center">orange</div>
+      <div class="col-3 bg-purple p-2 text-center">purple</div>
+      <div class="col-3 bg-pink p-2 text-center">pink</div>
+      <div class="col-3 bg-grey p-2 text-center">grey</div>
+      <div class="col-3 bg-black p-2 text-center text-white">black</div>
+      <div class="col-3 bg-white p-2 text-center">white</div>
+    </div>
+
+    <h4 class="mt-3">Színvariációk – minta</h4>
+    <div class="row">
+      <div class="col-3 bg-orange-l p-2 text-center">orange-l</div>
+      <div class="col-3 bg-orange-lighter p-2 text-center">orange-lighter</div>
+      <div class="col-3 bg-orange-d p-2 text-center">orange-d</div>
+      <div class="col-3 bg-orange-darker p-2 text-center">orange-darker</div>
+
+      <div class="col-3 bg-green-l p-2 text-center">green-l</div>
+      <div class="col-3 bg-green-lighter p-2 text-center">green-lighter</div>
+      <div class="col-3 bg-green-d p-2 text-center">green-d</div>
+      <div class="col-3 bg-green-darker p-2 text-center">green-darker</div>
+    </div>
+
+    <p class="mt-2 text-grey">A fenti rendszer minden alapszínhez elérhető.</p>
+  </div>
+
+  <!-- FELSOROLÁSOK -->
+  <h2>Felsorolások – az összes lista stílus</h2>
+  <div class="demo-box">
+    <div class="row">
+      <div class="col-6">
+        <h4>Unordered listák</h4>
+        <ul class="ul-disc"><li>ul-disc</li><li>elem</li><li>elem</li></ul>
+        <ul class="ul-circle"><li>ul-circle</li><li>elem</li><li>elem</li></ul>
+        <ul class="ul-square"><li>ul-square</li><li>elem</li><li>elem</li></ul>
+      </div>
+      <div class="col-6">
+        <h4>Ordered listák</h4>
+        <ol class="ol-dec"><li>ol-dec</li><li>elem</li><li>elem</li></ol>
+        <ol class="ol-leading-zero"><li>ol-leading-zero</li><li>elem</li><li>elem</li></ol>
+        <ol class="ol-upper-roman"><li>ol-upper-roman</li><li>elem</li><li>elem</li></ol>
+        <ol class="ol-lower-roman"><li>ol-lower-roman</li><li>elem</li><li>elem</li></ol>
+        <ol class="ol-upper-alpha"><li>ol-upper-alpha</li><li>elem</li><li>elem</li></ol>
+        <ol class="ol-lower-alpha"><li>ol-lower-alpha</li><li>elem</li><li>elem</li></ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- TÁBLÁZATOK -->
+  <h2>Táblázatok</h2>
+  <h4>.table-hover-row – teljes sor kiemelése</h4>
+  <table class="table table-0 table-green table-hover-green-row table-bordered-all table-text-center">
+    <thead>
+      <tr><th>Név</th><th>Kor</th><th>Város</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Anna</td><td>22</td><td>Budapest</td></tr>
+      <tr><td>Bence</td><td>19</td><td>Szeged</td></tr>
+      <tr><td>Kata</td><td>25</td><td>Pécs</td></tr>
+    </tbody>
+  </table>
+
+  <h4>.table-hover-cell – csak a cella emelődik ki</h4>
+  <table class="table table-0 table-light-blue table-hover-light-blue-cell table-bordered-all table-text-center">
+    <thead>
+      <tr><th>Név</th><th>Kor</th><th>Város</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Anna</td><td>22</td><td>Budapest</td></tr>
+      <tr><td>Bence</td><td>19</td><td>Szeged</td></tr>
+      <tr><td>Kata</td><td>25</td><td>Pécs</td></tr>
+    </tbody>
+  </table>
+
+  <!-- FORM ELEMEK -->
+  <h2>Form elemek</h2>
+  <form class="form col-12 col-md-6">
+    <label>Név</label>
+    <input type="text" placeholder="Írd be a neved">
+
+    <label>Jelszó</label>
+    <input type="password" placeholder="Jelszó">
+
+    <label>Választás</label>
+    <select>
+      <option>Első</option>
+      <option>Második</option>
+      <option>Harmadik</option>
+    </select>
+
+    <input type="submit" class="btn btn-submit-green" value="Küldés">
+  </form>
+
+  <!-- MARGÓK -->
+  <h2>Külső és belső margók</h2>
+  <div class="demo-box">
+    <div class="bg-orange p-3 m-3">.p-3 .m-3</div>
+    <div class="bg-purple px-4 py-2 mx-2 my-4">.px-4 .py-2 .mx-2 .my-4</div>
+    <div class="bg-green ps-5 pe-2 pt-2 pb-4">.ps-5 .pe-2 .pt-2 .pb-4</div>
+  </div>
+
+  <!-- FLEX RENDEZÉS -->
+  <h2>Div rendezés – Flex</h2>
+  <div class="demo-box centered-flex bg-grey-l" style="height:120px;">
+    <div class="bg-green p-2">.centered-flex</div>
+  </div>
+
+  <div class="demo-box dis-flex">
+    <div class="bg-red p-2">flex 1</div>
+    <div class="bg-light-blue p-2">flex 2</div>
+    <div class="bg-orange p-2">flex 3</div>
+  </div>
+
+  <!-- GOMBOK -->
+  <h2>Gombok – színek, outline, méret, border</h2>
+  <div class="demo-box">
+
+    <h4>Normál színes gombok (btn-hover)</h4>
+    <a href="#" class="btn btn-green btn-hover">Green</a>
+    <a href="#" class="btn btn-red btn-hover">Red</a>
+    <a href="#" class="btn btn-orange btn-hover">Orange</a>
+    <a href="#" class="btn btn-light-blue btn-hover">Light Blue</a>
+    <a href="#" class="btn btn-dark-blue btn-hover">Dark Blue</a>
+    <a href="#" class="btn btn-purple btn-hover">Purple</a>
+    <a href="#" class="btn btn-pink btn-hover">Pink</a>
+    <a href="#" class="btn btn-grey btn-hover">Grey</a>
+
+    <h4 class="mt-4">Outline gombok</h4>
+    <a href="#" class="btn btn-outline-green">Outline Green</a>
+    <a href="#" class="btn btn-outline-red">Outline Red</a>
+    <a href="#" class="btn btn-outline-orange">Outline Orange</a>
+    <a href="#" class="btn btn-outline-light-blue">Outline Light Blue</a>
+    <a href="#" class="btn btn-outline-dark-blue">Outline Dark Blue</a>
+    <a href="#" class="btn btn-outline-purple">Outline Purple</a>
+
+    <h4 class="mt-4">Méretezett gombok</h4>
+    <a href="#" class="btn btn-green btn-sm">SM</a>
+    <a href="#" class="btn btn-orange btn-m">M</a>
+    <a href="#" class="btn btn-red btn-l">L</a>
+    <a href="#" class="btn btn-dark-blue btn-xl">XL</a>
+    <a href="#" class="btn btn-purple btn-xxl">XXL</a>
+
+    <h4 class="mt-4">Border stílus + vastagság</h4>
+    <a href="#" class="btn btn-grey btn-bw-1 btn-bs-solid">Solid</a>
+    <a href="#" class="btn btn-grey btn-bw-2 btn-bs-dashed">Dashed</a>
+    <a href="#" class="btn btn-grey btn-bw-3 btn-bs-dotted">Dotted</a>
+    <a href="#" class="btn btn-grey btn-bw-4 btn-bs-double">Double</a>
+  </div>
+
+  <p class="text-center my-5">Commit & Pray Framework – Teljes körű dokumentációs bemutató</p>
+
+</div>
+
 </body>
 </html>
