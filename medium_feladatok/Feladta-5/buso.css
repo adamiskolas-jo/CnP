@@ -1,0 +1,17 @@
+li {
+    list-style: url("./img/jel.png");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+p::first-letter {
+    margin-left: 20px;
+}
+header{
+    background-image: url("./img/header.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+}
