@@ -21,7 +21,8 @@ h1,h2 {
 }
 
 img {
-    max-width: 300px;
+    width: 15em;
+    min-width: 300px;
 }
 
 li {
