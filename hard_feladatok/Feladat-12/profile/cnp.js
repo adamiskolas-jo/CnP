@@ -41,22 +41,32 @@ function login() {
     });
 }
 
-function getTeam() {
+function getTeam(tipus) {
     $.ajax({
         url: '../../api.php',
         type: 'POST',
         data: {
             username: getCookie("username"),
             hash: getCookie("token"),
-            type: 'team',
+            type: tipus,
             password: "CnP_a_best_trust",
         },
         success: function (result) {
             let data = JSON.parse(result)
-            getSec.innerHTML = "<h1>Csapatnév:</h1>";
-            let p = document.createElement("p");
-            p.textContent = data.csapat;
-            getSec.appendChild(p);
+
+
+
+            if (tipus == "team") {
+                getSec.innerHTML = `<h1>Üdvözlünk ${data.user}!</h1><h3>Csapat adatok:</h3><table class="table table-striped table-hover table-primary"><thead><tr><th>Csapat</th><th>Csoport</th><th>Pozíciód</th><th>Pont</th><th>Osztály</th></tr></thead><tbody><tr><td>${data.csapat}</td><td>${data.csoport}</td><td>${data.pozíció}</td><td>${data.pont}</td><td>${data.osztály}</td></tr></tbody></table>`;               
+                /* Old approach
+                    let h3 = document.createElement("h3");
+                    h3.textContent = data.csapat;
+                    getSec.appendChild(h3);   */
+
+            }
+            if (tipus == "") {
+                getSec.innerHTML = `<h1>Üdvözlünk ${data.user}!</h1><h3>Csapatnév: ${data.csapat}</h3>`;               
+            }
         }
     })
 }
