@@ -94,7 +94,7 @@ function getStat(tipus) {
                 let tATbody = document.getElementById("tableActiveTasksBody");
 
                 data.forEach((task, index) => {
-                    tATbody.innerHTML += `<tr><td>${index + 1}.</td><td>${task.cim}</td><td>${task.lvl}</td><td>${task.megszerezheto_pont}</td><td>${task.lejarat}</td><td>${task.rövid_leiras}</td></tr>`;
+                    tATbody.innerHTML += `<tr><td>${index + 1}.</td><td>${task.cim}</td><td>${task.lvl}</td><td>${task.megszerezheto_pont}</td><td>${task.lejarat}</td><td>${task.rövid_leiras}</td><td>${task.state}</td></tr>`;
                 }
                 )
             }
@@ -104,7 +104,7 @@ function getStat(tipus) {
                 let tATbody = document.getElementById("tableActiveTasksBody");
 
                 data.forEach((task, index) => {
-                    tATbody.innerHTML += `<tr><td>${index + 1}.</td><td>${task.cim}</td><td>${task.lvl}</td><td>${task.megszerezheto_pont}</td><td>${task.lejarat}</td><td>${task.rövid_leiras}</td><td>${task.state}</td></tr>`;
+                    tATbody.innerHTML += `<tr><td>${index + 1}.</td><td>${task.cim}</td><td>${task.lvl}</td><td>${task.megszerezheto_pont}</td><td>${task.lejarat}</td><td>${task.rövid_leiras}</td></tr>`;
                 }
                 )
             }
