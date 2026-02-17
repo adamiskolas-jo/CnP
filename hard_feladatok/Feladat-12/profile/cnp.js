@@ -40,7 +40,7 @@ function login() {
     });
 }
 
-function getTeam(tipus) {
+function getStat(tipus) {
     $.ajax({
         url: '../../api.php',
         type: 'POST',
@@ -63,10 +63,26 @@ function getTeam(tipus) {
 
             }
             if (tipus == "score") {
-                getSec.innerHTML = `<div class="row"><div class="col-12"><h3>Csapat adatok:</h3><div class="table-responsive"><table class="table table-striped table-hover table-success round"><thead><tr><th>Helyezés</th><th>Csapatneve</th><th>Pontszám</th><th>Osztály</th></tr></thead><tbody><tr><td>1</td><td>${data[0].team}</td><td>${data[0].pont}</td><td>${data[0].osztály}</td></tr><tr><td>2</td><td>${data[1].team}</td><td>${data[1].pont}</td><td>${data[1].osztály}</td></tr><tr><td>3</td><td>${data[2].team}</td><td>${data[2].pont}</td><td>${data[2].osztály}</td></tr><tr><td>4</td><td>${data[3].team}</td><td>${data[3].pont}</td><td>${data[3].osztály}</td></tr><tr><td>5</td><td>${data[4].team}</td><td>${data[4].pont}</td><td>${data[4].osztály}</td></tr><tr><td>6</td><td>${data[5].team}</td><td>${data[5].pont}</td><td>${data[5].osztály}</td></tr><tr><td>7</td><td>${data[6].team}</td><td>${data[6].pont}</td><td>${data[6].osztály}</td></tr><tr><td>8</td><td>${data[7].team}</td><td>${data[7].pont}</td><td>${data[7].osztály}</td></tr><tr><td>9</td><td>${data[8].team}</td><td>${data[8].pont}</td><td>${data[8].osztály}</td></tr><tr><td>10</td><td>${data[9].team}</td><td>${data[9].pont}</td><td>${data[9].osztály}</td></tr><tr><td>11</td><td>${data[10].team}</td><td>${data[10].pont}</td><td>${data[10].osztály}</td></tr><tr><td>12</td><td>${data[11].team}</td><td>${data[11].pont}</td><td>${data[11].osztály}</td></tr><tr><td>13</td><td>${data[12].team}</td><td>${data[12].pont}</td><td>${data[12].osztály}</td></tr><tr><td>14</td><td>${data[13].team}</td><td>${data[13].pont}</td><td>${data[13].osztály}</td></tr><tr><td>15</td><td>${data[14].team}</td><td>${data[14].pont}</td><td>${data[14].osztály}</td></tr><tr><td>16</td><td>${data[15].team}</td><td>${data[15].pont}</td><td>${data[15].osztály}</td></tr><tr><td>17</td><td>${data[16].team}</td><td>${data[16].pont}</td><td>${data[16].osztály}</td></tr></tbody></table></div></div></div>`;
+                getSec.innerHTML = `<div class="row"><div class="col-12"><h3>Csapat adatok:</h3><div class="table-responsive"><table class="table table-striped table-hover table-success round"><thead><tr><th>Helyezés</th><th>Csapatneve</th><th>Pontszám</th><th>Osztály</th></tr></thead><tbody id="tableLeaderboardBody"></tbody></table>`
+                let tLBbody = document.getElementById("tableLeaderboardBody");
+                data.forEach((task, index) => {
+                    tLBbody.innerHTML += `<tr><td>${index + 1}.</td><td>${data[index+1].team}</td><td>${data[index+1].pont}</td><td>${data[index+1].osztály}</tr>`;
+                }
+                )
+
+            }
+            if (tipus == "task") {
+                getSec.innerHTML = `<div class="table-responsive">
+                    <table class="table table-striped table-hover table-success"><thead><tr><th>Sorszám</th><th>Cím</th><th>Nehézség</th><th>Megszerezhető pontszám</th><th>Lejárat</th><th>Rövid leírás</th><th>Státusz</th></tr></thead><tbody id="tableActiveTasksBody"></tbody></table>`;
+                let tATbody = document.getElementById("tableActiveTasksBody");
+
+                data.forEach((task, index) => {
+                    tATbody.innerHTML += `<tr><td>${index + 1}.</td><td>${task.cim}</td><td>${task.lvl}</td><td>${task.megszerezheto_pont}</td><td>${task.lejarat}</td><td>${task.rövid_leiras}</td><td>${task.state}</td></tr>`;
+                }
+                )
             }
         }
-    })
+    });
 }
 
 
