@@ -1,8 +1,10 @@
+const teamSec = document.getElementById("teamSection")
+
+
+
 function login() {
     const username = document.getElementById("username").value
     const password = document.getElementById("password").value
-    const tartalom = document.getElementById("tartalom")
-
     $.ajax({
         url: '../../api.php',
         type: 'POST',
@@ -12,13 +14,10 @@ function login() {
             type: 'login'
         },
         success: function (result) {
-            eredmeny = JSON.parse(result);
-            setCookie("token", result, 1);
-            setCookie("team", result.team, 1);
-            if (setCookie("team", result.team, 1)) {
-                team.textContent = team;
-                tartalom.appendChild(team);
-            }
+            setCookie("token", result);
+            setCookie("username", username);
+            window.location.href = "./";
+
             /*$.ajax({
                 url: '../../api.php',
                 type: 'POST',
@@ -42,7 +41,32 @@ function login() {
     });
 }
 
-function setCookie(cname, cvalue, exdays) {
+function getTeam() {
+    $.ajax({
+        url: '../../api.php',
+        type: 'POST',
+        data: {
+            username: getCookie("username"),
+            hash: getCookie("token"),
+            type: 'team',
+            password: "CnP_a_best_trust",
+        },
+        success: function (result) {
+            let data = JSON.parse(result)
+            teamSec.innerHTML = "";
+            let p = document.createElement("p");
+            p.textContent = data.csapat;
+            teamSec.appendChild(p);
+        }
+    })
+}
+
+
+
+
+
+
+function setCookie(cname, cvalue, exdays = 1) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     let expires = "expires=" + d.toUTCString();
