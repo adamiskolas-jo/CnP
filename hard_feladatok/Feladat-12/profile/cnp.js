@@ -1,4 +1,4 @@
-const teamSec = document.getElementById("teamSection")
+const getSec = document.getElementById("getSection")
 
 
 
@@ -53,10 +53,10 @@ function getTeam() {
         },
         success: function (result) {
             let data = JSON.parse(result)
-            teamSec.innerHTML = "";
+            getSec.innerHTML = "<h1>Csapatnév:</h1>";
             let p = document.createElement("p");
             p.textContent = data.csapat;
-            teamSec.appendChild(p);
+            getSec.appendChild(p);
         }
     })
 }
