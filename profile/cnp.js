@@ -132,7 +132,7 @@ function logout() {
     setCookie("username", username, -1);
     setCookie("user", username, -1);
     setCookie("hash", hash, -1);
-    window.location.href = "./login/";
+    window.location.href = "../";
 }
 
 function setCookie(cname, cvalue, exdays = 1) {
