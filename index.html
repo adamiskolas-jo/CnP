@@ -18,26 +18,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./profile/cnp.js" defer></script>
+    <script src="./js/index.js" defer></script>
 </head>
 
-<nav class="navbar py-2 px-4">
+<nav class="navbar" id="navbar">
 
     <div class="nav-left">
-        <a href="#"><img src="./img/icon.svg" alt="Commit & Pray logó">
-            <h2>Commit & Pray</h2>
+        <a href="#kezdolap">
+            <img src="./img/icon.svg" alt="Commit & Pray logó">
+            <span>Commit & Pray</span>
         </a>
     </div>
 
-    <div class="nav-right">
-        <a href="#kezdolap">Kezdőlap</a>
-        <div id="profile-nav-section"></div>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="nav-right" id="nav-menu">
         <a href="#projektek">Projektek</a>
         <a href="#csapat">Csapat</a>
         <a href="#rolunk">Rólunk</a>
+        <div class="divider"></div>
+        <div id="profile-nav-section"></div>
     </div>
 
 </nav>
+
 
 <body>
     <main id="kezdolap">
@@ -247,7 +255,8 @@
                     </div>
                     <div class="card-body">
                         <h2 class="card-title text-decoration-underline">Projekt 6</h2>
-                        <p class="card-text ms-3 me-2 mt-1">Adatbázis létrehozása táblákkal és azokba adatok importálása, majd ezek az adatok különböző módokon való lekérdezése SQL parancsokkal.</p>
+                        <p class="card-text ms-3 me-2 mt-1">Adatbázis létrehozása táblákkal és azokba adatok
+                            importálása, majd ezek az adatok különböző módokon való lekérdezése SQL parancsokkal.</p>
 
                         <h4 class="card-title text-decoration-underline fst-italic my-1">Státusz:</h4>
 
@@ -274,7 +283,8 @@
                     </div>
                     <div class="card-body">
                         <h2 class="card-title text-decoration-underline">Projekt 7</h2>
-                        <p class="card-text ms-3 me-2 mt-1">Balatongyörök<br>Weblap elkészítése leírás alapján HTML-ben, CSS-sel és Bootstrap segítségével.</p>
+                        <p class="card-text ms-3 me-2 mt-1">Balatongyörök<br>Weblap elkészítése leírás alapján HTML-ben,
+                            CSS-sel és Bootstrap segítségével.</p>
 
                         <h4 class="card-title text-decoration-underline fst-italic my-1">Státusz:</h4>
 
@@ -301,7 +311,8 @@
                     </div>
                     <div class="card-body">
                         <h2 class="card-title text-decoration-underline">Projekt 8</h2>
-                        <p class="card-text ms-3 me-2 mt-1">Busójárás<br>Weblap elkészítése leírás alapján HTML-ben, CSS-sel és Bootstrap segítségével.</p>
+                        <p class="card-text ms-3 me-2 mt-1">Busójárás<br>Weblap elkészítése leírás alapján HTML-ben,
+                            CSS-sel és Bootstrap segítségével.</p>
 
                         <h4 class="card-title text-decoration-underline fst-italic my-1">Státusz:</h4>
 
@@ -327,7 +338,9 @@
                     </div>
                     <div class="card-body">
                         <h2 class="card-title text-decoration-underline">Projekt 9</h2>
-                        <p class="card-text ms-3 me-2 mt-1">Fagylalt 3<br>A fagylalt feladatok trilógiájának a potenciális lezáró feladata (persze csak ha nem lesz több ilyen). Még George Lucas is megirigyelné.</p>
+                        <p class="card-text ms-3 me-2 mt-1">Fagylalt 3<br>A fagylalt feladatok trilógiájának a
+                            potenciális lezáró feladata (persze csak ha nem lesz több ilyen). Még George Lucas is
+                            megirigyelné.</p>
 
                         <h4 class="card-title text-decoration-underline fst-italic my-1">Státusz:</h4>
 

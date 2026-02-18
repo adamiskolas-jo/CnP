@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
     /* background-image: url(../img/istockphoto-805086280-612x612.png); */
     background-color: #3b414b;
-     overflow-x: hidden;
+    overflow-x: hidden;
     padding-top: 100px;
 }
 
@@ -45,6 +45,11 @@ body {
     z-index: 2000;
     transition: background-color 0.3s ease-in-out;
     border-radius: 0 0 0.4rem 0.4rem;
+
+}
+
+.NO-navbar-radius {
+    border-radius: 0 !important;
 }
 
 nav.navbar:hover {
@@ -84,16 +89,140 @@ nav.navbar:hover {
     border-radius: 0.5rem;
     margin-right: 0.5rem;
 }
-
 .nav-left a {
     color: white;
     text-decoration: none;
     display: flex;
-    justify-content: center;
     align-items: center;
-
 }
 
+.nav-right a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+    padding: 4px 0;
+}
+
+.nav-right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #b0a0ff;
+    transition: width 0.3s ease;
+}
+
+.nav-right a:hover::after {
+    width: 100%;
+}
+
+.divider {
+    width: 2px;
+    height: 28px;
+    background-color: rgba(61, 60, 60, 0.7);
+    align-self: center;
+    border-radius: 1px;
+    margin: 0 2px; /* kis távolság a linkekhez */
+}
+
+@media (max-width: 768px) {
+    .divider {
+        display: none;
+    }
+}
+
+#profile-a {
+    font-weight: 600;
+}
+
+#profile-a::after {
+    width: 100%;
+}
+
+#profile-a:hover {
+    color: #b0a0ff;
+    text-shadow: 0 0 8px rgba(176, 160, 255, 0.7);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    position: relative;
+    z-index: 3000;
+}
+
+.hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 0;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 9px;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    bottom: 10px;
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-right {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        background-color: rgba(27, 26, 26, 0.95);
+
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+
+        transform: translateY(-120%);
+        opacity: 0;
+        transition: 0.4s ease;
+    }
+
+    .nav-right.active {
+        transform: translateY(0);
+        opacity: 1;
+        border-radius: 0 0 0.4rem 0.4rem;
+    }
+}
 
 /*  Talán egyszer
 
@@ -129,7 +258,8 @@ canvas {
     margin-bottom: 10rem;
 }
 
-.projects-card, .team-card{
+.projects-card,
+.team-card {
     padding-top: 12px;
 }
 
@@ -155,17 +285,17 @@ canvas {
 #csapat::after {
     content: "";
     position: absolute;
-    top: 0;       
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100%;   
+    height: 100%;
     background: linear-gradient(to bottom, rgba(42, 47, 54, 0.6) 0%, rgba(42, 47, 54, 0.3) 100%);
-    z-index: 0;     
+    z-index: 0;
 }
 
-#csapat > * {
+#csapat>* {
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
 
 
@@ -210,11 +340,11 @@ canvas {
 
 }
 
-.card-name{
+.card-name {
     margin: 0.2rem;
 }
 
-.card-rank-margin{
+.card-rank-margin {
     margin: 0 0.5rem 1rem 0.4rem;
 }
 
