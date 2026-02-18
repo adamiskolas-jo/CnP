@@ -1,5 +1,4 @@
 const getSec = document.getElementById("getSection")
-const profileNavSec = document.getElementById("profile-nav-section")
 
 function login() {
     const username = document.getElementById("username").value
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function getStat(tipus) {
     $.ajax({
-        url: '../../api.php',
+        url: '../../../api.php',
         type: 'POST',
         data: {
             username: getCookie("username"),
@@ -109,18 +108,6 @@ function getStat(tipus) {
         }
     });
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    if (loggedIn()) {
-        profileNavSec.innerHTML = `<a href="./profile/" class="text-decoration-underline">Profilom</a>`
-    }
-    if (!loggedIn()) {
-        profileNavSec.innerHTML = `<a href="./profile/login/" class="text-decoration-underline">Bejelentkezés</a>`
-    }
-})
-
-
-
 
 
 function logout() {
