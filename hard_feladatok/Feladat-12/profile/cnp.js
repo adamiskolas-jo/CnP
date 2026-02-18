@@ -1,5 +1,5 @@
 const getSec = document.getElementById("getSection")
-
+const profileNavSec = document.getElementById("profile-nav-section")
 
 function login() {
     const username = document.getElementById("username").value
@@ -15,10 +15,8 @@ function login() {
         success: function (result) {
             setCookie("token", result);
             setCookie("username", username);
+            window.location.href = "../";
 
-            setTimeout(() => {
-                window.location.href = "../";
-            }, 1000);
             /*$.ajax({
                 url: '../../api.php',
                 type: 'POST',
@@ -100,7 +98,7 @@ function getStat(tipus) {
             }
             if (tipus == "able_task") {
                 getSec.innerHTML = `<div class="col-12"><h3>Felvett feladatok listája:</h3>
-                <p>Rendezés: felvétel szerinti</p><div class="table-responsive"><table class="table table-striped table-hover table-success"><thead><tr><th>Sorszám</th><th>Cím</th><th>Nehézség</th><th>Megszerezhető pontszám</th><th>Lejárat</th><th>Rövid leírás</th><th>Státusz</th></tr></thead><tbody id="tableActiveTasksBody"></tbody></table>`;
+                <p>Rendezés: felvétel szerinti</p><div class="table-responsive"><table class="table table-striped table-hover table-success"><thead><tr><th>Sorszám</th><th>Cím</th><th>Nehézség</th><th>Megszerezhető pontszám</th><th>Lejárat</th><th>Rövid leírás</th></tr></thead><tbody id="tableActiveTasksBody"></tbody></table>`;
                 let tATbody = document.getElementById("tableActiveTasksBody");
 
                 data.forEach((task, index) => {
@@ -111,6 +109,17 @@ function getStat(tipus) {
         }
     });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (loggedIn()) {
+        profileNavSec.innerHTML = `<a href="./profile/" class="text-decoration-underline">Profilom</a>`
+    }
+    if (!loggedIn()) {
+        profileNavSec.innerHTML = `<a href="./profile/login/" class="text-decoration-underline">Bejelentkezés</a>`
+    }
+})
+
+
 
 
 
