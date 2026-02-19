@@ -41,7 +41,6 @@ function login() {
 
 function loggedIn() {
     return getCookie("token") != "";
-
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -50,6 +49,25 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = "/cnp/profile/login/";
             return;
         }
+    }
+})
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (loggedIn()) {
+        $.ajax({
+            url: '../../../api.php',
+            type: 'POST',
+            data: {
+                username: getCookie("username"),
+                hash: getCookie("token"),
+                type: "team",
+                password: "CnP_a_best_trust",
+            },
+            success: function (result) {
+                let fullname = JSON.parse(result).user
+                getSec.innerHTML = `<div class="row"><div class="col-12 col-md-4 col-lg-6"><h1>Üdvözlünk ${fullname}!</h1></div></div>`
+            }
+        })
     }
 })
 
