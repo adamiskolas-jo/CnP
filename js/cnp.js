@@ -1,4 +1,5 @@
 const getSec = document.getElementById("getSection")
+const getFullnameSec = document.getElementById("fullnameSec")
 
 function login() {
     const username = document.getElementById("username").value
@@ -65,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             success: function (result) {
                 let fullname = JSON.parse(result).user
-                getSec.innerHTML = `<div class="row"><div class="col-12 col-md-4 col-lg-6"><h1>Üdvözlünk ${fullname}!</h1></div></div>`
+                getFullnameSec.innerHTML = `<div class="row"><div class="col-12 text-white text-center my-4"><h1>Üdvözlünk<br>${fullname}!</h1></div></div>`
             }
         })
     }
@@ -85,17 +86,18 @@ function getStat(tipus) {
         success: function (result) {
             let data = JSON.parse(result)
 
-            if (tipus == "team") {
-                getSec.innerHTML = `<div class="row"><div class="col-12 col-md-4 col-lg-6"><h1>Üdvözlünk ${data.user}!</h1></div><div class="col-12 col-md-8 col-lg-6"><h3>Csapatod adatai:</h3><div class="table-responsive"><table class="table table-striped table-hover table-success rounded"><tbody><tr><th>Csapat</th><td>${data.csapat}</td></tr><tr><th>Csoport</th><td>${data.csoport}</td></tr><tr><th>Pozíciód</th><td>${data.pozíció}</td></tr><tr><th>Pont</th><td>${data.pont}</td></tr><tr><th>Osztály</th><td>${data.osztály}</td></tr></tbody></table></div></div></div>`;
+if (tipus == "team") {
+    getSec.innerHTML = `<div class="dashboard-card"><div class="dashboard-header"><h2>Csapat adatok</h2><p>${data.user}</p></div><div class="dashboard-grid"><div class="stat-box"><span>Csapat</span><strong>${data.csapat}</strong></div><div class="stat-box"><span>Csoport</span><strong>${data.csoport}</strong></div><div class="stat-box"><span>Pozíció</span><strong>${data.pozíció}</strong></div><div class="stat-box"><span>Pont</span><strong>${data.pont}</strong></div><div class="stat-box"><span>Osztály</span><strong>${data.osztály}</strong></div></div></div>`;
+}
 
                 /* Old approach
                     let h3 = document.createElement("h3");
                     h3.textContent = data.csapat;
                     getSec.appendChild(h3);   */
 
-            }
+            
             if (tipus == "score") {
-                getSec.innerHTML = `<div class="row"><div class="col-12"><h3>Csapatok összesített adatjai:</h3><div class="table-responsive"><table class="table table-striped table-hover table-success round"><thead><tr><th>Helyezés</th><th>Csapatneve</th><th>Pontszám</th><th>Osztály</th></tr></thead><tbody id="tableLeaderboardBody"></tbody></table>`
+                getSec.innerHTML = `<div class="row"><div class="col-12"><h3 class="text-white">Csapatok összesített adatai:</h3><p class="text-white">Rendezés: pontszám szerinti</p><div class="table-responsive"><table class="table table-padding table-striped table-hover table-dark"><thead><tr><th>Helyezés</th><th>Csapatneve</th><th>Pontszám</th><th>Osztály</th></tr></thead><tbody id="tableLeaderboardBody"></tbody></table>`
                 let tLBbody = document.getElementById("tableLeaderboardBody");
                 data.forEach((task, index) => {
                     tLBbody.innerHTML += `<tr><td>${index + 1}.</td><td>${data[index + 1].team}</td><td>${data[index + 1].pont}</td><td>${data[index + 1].osztály}</tr>`;
@@ -104,8 +106,8 @@ function getStat(tipus) {
 
             }
             if (tipus == "task") {
-                getSec.innerHTML = `<div class="col-12"><h3>Felvett feladatok listája:</h3>
-                <p>Rendezés: felvétel szerinti</p><div class="table-responsive"><table class="table table-striped table-hover table-success"><thead><tr><th>Sorszám</th><th>Cím</th><th>Nehézség</th><th>Megszerezhető pontszám</th><th>Lejárat</th><th>Rövid leírás</th><th>Státusz</th></tr></thead><tbody id="tableActiveTasksBody"></tbody></table>`;
+                getSec.innerHTML = `<div class="col-12"><h3 class="text-white">Felvett feladatok listája:</h3>
+                <p class="text-white">Rendezés: felvétel szerinti</p><div class="table-responsive"><table class="table table-padding text-center table-striped table-hover table-dark"><thead><tr><th>Sorszám</th><th>Cím</th><th>Nehézség</th><th>Megszerezhető pontszám</th><th>Lejárat</th><th>Rövid leírás</th><th>Státusz</th></tr></thead><tbody id="tableActiveTasksBody"></tbody></table>`;
                 let tATbody = document.getElementById("tableActiveTasksBody");
 
                 data.forEach((task, index) => {
@@ -114,9 +116,9 @@ function getStat(tipus) {
                 )
             }
             if (tipus == "able_task") {
-                getSec.innerHTML = `<div class="col-12"><h3>Elérhető feladatok listája:</h3>
-                <p>Rendezés: hozzáadás szerinti</p><div class="table-responsive"><table class="table table-striped table-hover table-success"><thead><tr><th>Sorszám</th><th>Cím</th><th>Nehézség</th><th>Megszerezhető pontszám</th><th>Lejárat</th><th>Rövid leírás</th></tr></thead><tbody id="tableActiveTasksBody"></tbody></table>`;
-                let tATbody = document.getElementById("tableActiveTasksBody");
+                getSec.innerHTML = `<div class="col-12"><h3 class="text-white">Elérhető feladatok listája:</h3>
+                <p class="text-white">Rendezés: hozzáadás szerinti</p><div class="table-responsive"><table class="table text-center table-padding table-striped table-hover table-dark"><thead><tr><th>Sorszám</th><th>Cím</th><th>Nehézség</th><th>Megszerezhető pontszám</th><th>Lejárat</th><th>Rövid leírás</th></tr></thead><tbody id="tableAvailableTasksBody"></tbody></table>`;
+                let tATbody = document.getElementById("tableAvailableTasksBody");
 
                 data.forEach((task, index) => {
                     tATbody.innerHTML += `<tr><td>${index + 1}.</td><td>${task.cim}</td><td>${task.lvl}</td><td>${task.megszerezheto_pont}</td><td>${task.lejarat}</td><td>${task.rövid_leiras}</td></tr>`;
