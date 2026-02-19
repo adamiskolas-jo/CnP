@@ -140,3 +140,74 @@ body {
 .table-padding th {
     padding: 1.5rem;
 }
+
+
+.login-wrapper {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 105, 110, 0.15);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.45);
+    color: white;
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 105, 110, 0.15);
+    border-radius: 0.9rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    transition: 0.25s ease;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 105, 110, 0.6);
+    box-shadow: 0 0 12px rgba(255, 105, 110, 0.35);
+    color: white;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 1rem;
+    border: none;
+
+    background: linear-gradient(135deg, rgba(255, 105, 110, 0.8), rgba(255, 105, 110, 0.5));
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.25s ease;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 105, 110, 0.35);
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        margin: 1rem;
+        padding: 2rem;
+    }
+}

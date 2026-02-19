@@ -4,40 +4,43 @@ const getFullnameSec = document.getElementById("fullnameSec")
 function login() {
     const username = document.getElementById("username").value
     const password = document.getElementById("password").value
-    $.ajax({
-        url: '../../../api.php',
-        type: 'POST',
-        data: {
-            username: username,
-            password: password,
-            type: 'login'
-        },
-        success: function (result) {
-            setCookie("token", result);
-            setCookie("username", username);
-            window.location.href = "../";
 
-            /*$.ajax({
-                url: '../../api.php',
-                type: 'POST',
-                data: {
-                    username: username,
-                    hash: token,
-                    type: "team",
-                    password: "1234565"
-                },
-                success: function (result) {
-                    console.log(result);
-                    eredmeny = JSON.parse(result);
-                    let team = document.createElement("p");
-                    document.cookie = team
-                    team.textContent = team.team;
-                    tartalom.appendChild(team);
-                }
-            })*/
-        }
+    if (username != "" && password != "") {
+        $.ajax({
+            url: '../../../api.php',
+            type: 'POST',
+            data: {
+                username: username,
+                password: password,
+                type: 'login'
+            },
+            success: function (result) {
+                setCookie("token", result);
+                setCookie("username", username);
+                window.location.href = "../";
 
-    });
+                /*$.ajax({
+                    url: '../../api.php',
+                    type: 'POST',
+                    data: {
+                        username: username,
+                        hash: token,
+                        type: "team",
+                        password: "1234565"
+                    },
+                    success: function (result) {
+                        console.log(result);
+                        eredmeny = JSON.parse(result);
+                        let team = document.createElement("p");
+                        document.cookie = team
+                        team.textContent = team.team;
+                        tartalom.appendChild(team);
+                    }
+                })*/
+            }
+
+        });
+    }
 }
 
 function loggedIn() {
@@ -48,6 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.location.pathname.endsWith("/cnp/profile/")) {
         if (!loggedIn()) {
             window.location.href = "/cnp/profile/login/";
+            return;
+        }
+    }
+})
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.pathname.endsWith("/cnp/profile/login/")) {
+        if (loggedIn()) {
+            window.location.href = "/cnp/profile/";
             return;
         }
     }
@@ -86,16 +98,16 @@ function getStat(tipus) {
         success: function (result) {
             let data = JSON.parse(result)
 
-if (tipus == "team") {
-    getSec.innerHTML = `<div class="dashboard-card"><div class="dashboard-header"><h2>Csapat adatok</h2><p>${data.user}</p></div><div class="dashboard-grid"><div class="stat-box"><span>Csapat</span><strong>${data.csapat}</strong></div><div class="stat-box"><span>Csoport</span><strong>${data.csoport}</strong></div><div class="stat-box"><span>Pozíció</span><strong>${data.pozíció}</strong></div><div class="stat-box"><span>Pont</span><strong>${data.pont}</strong></div><div class="stat-box"><span>Osztály</span><strong>${data.osztály}</strong></div></div></div>`;
-}
+            if (tipus == "team") {
+                getSec.innerHTML = `<div class="dashboard-card"><div class="dashboard-header"><h2>Csapat adatok</h2><p>${data.user}</p></div><div class="dashboard-grid"><div class="stat-box"><span>Csapat</span><strong>${data.csapat}</strong></div><div class="stat-box"><span>Csoport</span><strong>${data.csoport}</strong></div><div class="stat-box"><span>Pozíció</span><strong>${data.pozíció}</strong></div><div class="stat-box"><span>Pont</span><strong>${data.pont}</strong></div><div class="stat-box"><span>Osztály</span><strong>${data.osztály}</strong></div></div></div>`;
+            }
 
-                /* Old approach
-                    let h3 = document.createElement("h3");
-                    h3.textContent = data.csapat;
-                    getSec.appendChild(h3);   */
+            /* Old approach
+                let h3 = document.createElement("h3");
+                h3.textContent = data.csapat;
+                getSec.appendChild(h3);   */
 
-            
+
             if (tipus == "score") {
                 getSec.innerHTML = `<div class="row"><div class="col-12"><h3 class="text-white">Csapatok összesített adatai:</h3><p class="text-white">Rendezés: pontszám szerinti</p><div class="table-responsive"><table class="table table-padding table-striped table-hover table-dark"><thead><tr><th>Helyezés</th><th>Csapatneve</th><th>Pontszám</th><th>Osztály</th></tr></thead><tbody id="tableLeaderboardBody"></tbody></table>`
                 let tLBbody = document.getElementById("tableLeaderboardBody");
