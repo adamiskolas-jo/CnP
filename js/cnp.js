@@ -1,5 +1,6 @@
 const getSec = document.getElementById("getSection")
 const getFullnameSec = document.getElementById("fullnameSec")
+const getLoginError = document.getElementById("loginError")
 
 function login() {
     const username = document.getElementById("username").value
@@ -17,28 +18,46 @@ function login() {
             success: function (result) {
                 setCookie("token", result);
                 setCookie("username", username);
-                window.location.href = "../";
-
-                /*$.ajax({
-                    url: '../../api.php',
+                $.ajax({
+                    url: '../../../api.php',
                     type: 'POST',
                     data: {
-                        username: username,
-                        hash: token,
+                        username: getCookie("username"),
+                        hash: getCookie("token"),
                         type: "team",
-                        password: "1234565"
+                        password: "CnP_a_best_trust",
                     },
                     success: function (result) {
-                        console.log(result);
-                        eredmeny = JSON.parse(result);
-                        let team = document.createElement("p");
-                        document.cookie = team
-                        team.textContent = team.team;
-                        tartalom.appendChild(team);
+                        if (result == "No, no Mr. Database nem lenni itthon!" || result == "No, no Mr. User nem lenni itthon!") {
+                            setCookie("token", result, -1);
+                            setCookie("username", username, -1);
+                            getLoginError.innerHTML = `<p class="text-center">Nem jó felhasználónév és/vagy jelszó!<br>Kérjük próbáld újra!</p>`;
+                        }
+                        else {
+                            window.location.href = "../";
+                        }
                     }
-                })*/
-            }
 
+                    /*$.ajax({
+                        url: '../../api.php',
+                        type: 'POST',
+                        data: {
+                            username: username,
+                            hash: token,
+                            type: "team",
+                            password: "1234565"
+                        },
+                        success: function (result) {
+                            console.log(result);
+                            eredmeny = JSON.parse(result);
+                            let team = document.createElement("p");
+                            document.cookie = team
+                            team.textContent = team.team;
+                            tartalom.appendChild(team);
+                        }
+                    })*/
+                })
+            }
         });
     }
 }
