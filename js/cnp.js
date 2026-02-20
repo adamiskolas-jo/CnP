@@ -1,7 +1,6 @@
 const getSec = document.getElementById("getSection")
 const getFullnameSec = document.getElementById("fullnameSec")
 const getLoginError = document.getElementById("loginError")
-const index = -1
 
 function login() {
     const username = document.getElementById("username").value
@@ -143,7 +142,7 @@ function getStat(tipus) {
                 getSec.innerHTML = `<div class="row"><div class="col-12"><h3 class="text-white">Csapatok összesített adatai:</h3><p class="text-white">Rendezés: pontszám szerinti</p><div class="table-responsive"><table class="table table-padding table-striped table-hover table-dark"><thead><tr><th>Helyezés</th><th>Csapatneve</th><th>Pontszám</th><th>Osztály</th></tr></thead><tbody id="tableLeaderboardBody"></tbody></table>`
                 let tLBbody = document.getElementById("tableLeaderboardBody");
                 data.forEach((task, index) => {
-                    tLBbody.innerHTML += `<tr><td>${index + 1}.</td><td>${data[index + 1].team}</td><td>${data[index + 1].pont}</td><td>${data[index + 1].osztály}</tr>`;
+                    tLBbody.innerHTML += `<tr><td>${index + 1}.</td><td>${task.team}</td><td>${task.pont}</td><td>${task.osztály}</tr>`;
                 }
                 )
 
