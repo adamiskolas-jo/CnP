@@ -1,12 +1,13 @@
 const getSec = document.getElementById("getSection")
 const getFullnameSec = document.getElementById("fullnameSec")
 const getLoginError = document.getElementById("loginError")
+const index = -1
 
 function login() {
     const username = document.getElementById("username").value
     const password = document.getElementById("password").value
 
-    if (username != "" && password != "") {
+    if (username != "" || password != "") {
         $.ajax({
             url: '../../../api.php',
             type: 'POST',
@@ -60,6 +61,9 @@ function login() {
             }
         });
     }
+    else {
+        getLoginError.innerHTML = `<p class="text-center">Nem adtál meg felhasználónevet és jelszót sem!<br>Kérjük próbáld újra!</p>`;
+    }
 }
 
 function loggedIn() {
@@ -96,8 +100,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 password: "CnP_a_best_trust",
             },
             success: function (result) {
-                let fullname = JSON.parse(result).user
-                getFullnameSec.innerHTML = `<div class="row"><div class="col-12 text-white text-center my-4"><h1>Üdvözlünk<br>${fullname}!</h1></div></div>`
+                let gotAnyError = result
+                if (gotAnyError == "No, no Mr. Database nem lenni itthon!" || gotAnyError == "No, no Mr. User nem lenni itthon!") {
+                    setCookie("token", "", -1);
+                    setCookie("username", "", -1)
+                    window.location.href = "/cnp/profile/login/";
+                }
+                else {
+                    let fullname = JSON.parse(result).user
+                    getFullnameSec.innerHTML = `<div class="row"><div class="col-12 text-white text-center my-4"><h1>Üdvözlünk<br>${fullname}!</h1></div></div>`
+                }
             }
         })
     }
