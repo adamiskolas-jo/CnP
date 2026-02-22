@@ -22,3 +22,18 @@ for szo in szovegLista:
         leghosszabbSzo = szo
 print(f"Leghosszabb szó: {leghosszabbSzo}")
 
+betukLista = []
+voltBetuk = []
+
+for betu in szoveg:
+    betuSzotar = {}
+    if betu != " " and betu not in voltBetuk:
+        voltBetuk.append(betu)
+        betuSzotar['betu'] = betu
+        betuSzotar['gyakorisag'] = szoveg.count(betu)
+        betukLista.append(betuSzotar)        
+index = 0
+
+for i in betukLista:
+    print(f"Betű: {betukLista[index]['betu']}, Gyakorisága: {betukLista[index]['gyakorisag']}")
+    index += 1
