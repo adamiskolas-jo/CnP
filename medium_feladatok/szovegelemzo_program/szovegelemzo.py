@@ -15,3 +15,10 @@ for betu in szoveg:
 print(f"Karakterek száma: {karakterekSzama}")
 print(f"Szavak száma: {szavakSzama}")
 print(f"Magánhangzók száma: {maganhanzokSzama}")
+
+leghosszabbSzo = ""
+for szo in szovegLista:
+    if len(szo) > len(leghosszabbSzo):
+        leghosszabbSzo = szo
+print(f"Leghosszabb szó: {leghosszabbSzo}")
+
