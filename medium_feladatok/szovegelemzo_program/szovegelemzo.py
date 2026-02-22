@@ -1,7 +1,7 @@
 import os
-os.system("cls")
+os.ystem("cls")
 
-szoveg = input("Adjon meg egy tetzőleges szöveget: ")
+szoveg = input("Adjon meg egy teszőleges szöveget: ")
 szovegLista = szoveg.split()
 karakterekSzama = 0
 maganhanzokSzama = 0
