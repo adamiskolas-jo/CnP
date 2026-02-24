@@ -43,40 +43,43 @@ class Karakter():
         # Fegyverek
         
         if fegyver == "kard":
-            self.fegyverDmg = dobas(1,6,3)
             self.fegyverSpeed = 6
             self.fegyverDefense = 8
             self.fegyverAttack = 6
             self.fegyverKardBlacklist = ""
  
         elif fegyver == "tőr":
-            self.fegyverDmg = dobas(1,6)
             self.fegyverSpeed = 10
             self.fegyverDefense = 3
             self.fegyverAttack = 10
             self.fegyverTorBlacklist = "harcos"
         
         elif fegyver == "bot":
-            self.fegyverDmg = dobas(1,4)
             self.fegyverSpeed = 8
             self.fegyverDefense = 10
             self.fegyverAttack = 8
             self.fegyverBotWhitelist = "pap"
  
         elif fegyver == "pallos":
-            self.fegyverDmg = dobas(2,6)
             self.fegyverSpeed = 1
             self.fegyverDefense = 1
             self.fegyverAttack = 4
             self.fegyverPallosWhitelist = "harcos"
         
         elif fegyver == "buzogány":
-            self.fegyverDmg = dobas(2,4,2)
             self.fegyverSpeed = 4
             self.fegyverDefense = 5
             self.fegyverAttack = 4
             self.fegyverBuzoganyBlacklist = "tolvaj"
         
+        def fegyverDmg(self):
+            if fegyver == "kard":
+                self.fegyverDmg = dobas(1,6,3)
+            elif fegyver == "tőr vagy idk"
+ self.fegyverDmg = dobas(1,6)
+ self.fegyverDmg = dobas(1,4)
+ self.fegyverDmg = dobas(2,6)
+ self.fegyverDmg = dobas(2,4,2)
         self.tamadas = max(0, self.ero - 10) + self.fegyverAttack 
         self.vedekezes = max(0, self.ugyesseg - 10) + self.fegyverDefense  
         self.kezdemenyezes = max(0, self.gyorsasag - 10) + self.fegyverSpeed
@@ -119,7 +122,7 @@ def karakterLetrehozas():
         if kivalasztottKaszt == "harcos":
             print("  2. Pallos | Harcos Exklúzív")
             print("  3. Buzogány")
-            kivalasztottFegyver = int(input("Add meg a fegyvered (1-4):   "))
+            kivalasztottFegyver = int(input("Add meg a fegyvered (1-3):   "))
             match kivalasztottFegyver:
                 case 1:
                     kivalasztottFegyver = "kard"
@@ -194,14 +197,14 @@ def karakterLetrehozas():
 karakter1 = karakterLetrehozas()
 karakter2 = karakterLetrehozas()
 
-def harc():
-    global karakter1, karakter2
+def harc(harcKarakter1:object, harcKarakter2:object):
     cls()
-    if (karakter1.kezdemenyezes + dobas(1,10)) > (karakter2.kezdemenyezes + dobas(1,10)):
+    if (harcKarakter1.kezdemenyezes + dobas(1,10)) > (harcKarakter2.kezdemenyezes + dobas(1,10)):
+        harcKarakter1BattleChoice = ""
         print(">>> Harc <<<")
         while True:
-            print(f"{karakter1.nev} Mit fogsz tenni?")
-            if karakter1.specialUsedLastRound == False:
+            print(f"{harcKarakter1.nev} Mit fogsz tenni?")
+            if harcKarakter1.specialUsedLastRound == False:
                 print("Lehetőségek:\n Támadás (1) | Védekezés (2) | Képesség (3) | Képesség infó (4)")
             else:
                 print("Lehetőségek:\n Támadás (1) | Védekezés (2) | Nem használhatod most a képességed | Képesség infó (4)")
@@ -209,23 +212,129 @@ def harc():
                 valasztasHarc = int(input("Válassz!   "))
                 match valasztasHarc:
                     case 1:
-                        pass #tamad
+                        harcKarakter1BattleChoice = "támadás"
                         break
                     case 2:
-                        pass #vedekez
+                        harcKarakter1BattleChoice = "támadás"
                         break
                     case 3:
-                        if karakter1.specialUsedLastRound == False:
-                            pass # kepessegel
+                        if harcKarakter1.specialUsedLastRound == False:
+                            harcKarakter1BattleChoice = "képesség"
                             break
                     case 4:
                         cls()
-                        print(f"\nKépességed neve: {karakter1.specialName}\nKépesség leírása: {karakter1.special}")
+                        print(f"\nKépességed neve: {harcKarakter1.specialName}\nKépesség leírása: {harcKarakter1.special}")
                         input("Enter a visszalépéshez!   ")
                         cls()
             except:
                 input("Helytelen választás!\nPróbáld újra\nEnter a visszalépéshez!   ")
                 cls()
-           
 
-harc()
+        cls()
+        harcKarakter2BattleChoice = ""
+        print(">>> Harc <<<")
+        while True:
+            print(f"{harcKarakter2.nev} Mit fogsz tenni?")
+            if harcKarakter2.specialUsedLastRound == False:
+                print("Lehetőségek:\n Támadás (1) | Védekezés (2) | Képesség (3) | Képesség infó (4)")
+            else:
+                print("Lehetőségek:\n Támadás (1) | Védekezés (2) | Nem használhatod most a képességed | Képesség infó (4)")
+            try:
+                valasztasHarc = int(input("Válassz!   "))
+                match valasztasHarc:
+                    case 1:
+                        harcKarakter2BattleChoice = "támadás"
+                        break
+                    case 2:
+                        harcKarakter2BattleChoice = "támadás"
+                        break
+                    case 3:
+                        if harcKarakter2.specialUsedLastRound == False:
+                            harcKarakter2BattleChoice = "képesség"
+                            break
+                    case 4:
+                        cls()
+                        print(f"\nKépességed neve: {harcKarakter2.specialName}\nKépesség leírása: {harcKarakter2.special}")
+                        input("Enter a visszalépéshez!   ")
+                        cls()
+            except:
+                input("Helytelen választás!\nPróbáld újra\nEnter a visszalépéshez!   ")
+                cls()
+
+    # HA karakter2 kezdeményezése > karakter 1 kezdeményezés!443-!_.
+    else:
+        cls()
+        harcKarakter2BattleChoice = ""
+        print(">>> Harc <<<")
+        while True:
+            print(f"{harcKarakter2.nev} Mit fogsz tenni?")
+            if harcKarakter2.specialUsedLastRound == False:
+                print("Lehetőségek:\n Támadás (1) | Védekezés (2) | Képesség (3) | Képesség infó (4)")
+            else:
+                print("Lehetőségek:\n Támadás (1) | Védekezés (2) | Nem használhatod most a képességed | Képesség infó (4)")
+            try:
+                valasztasHarc = int(input("Válassz!   "))
+                match valasztasHarc:
+                    case 1:
+                        harcKarakter2BattleChoice = "támadás"
+                        break
+                    case 2:
+                        harcKarakter2BattleChoice = "támadás"
+                        break
+                    case 3:
+                        if harcKarakter2.specialUsedLastRound == False:
+                            harcKarakter2BattleChoice = "képesség"
+                            break
+                    case 4:
+                        cls()
+                        print(f"\nKépességed neve: {harcKarakter2.specialName}\nKépesség leírása: {harcKarakter2.special}")
+                        input("Enter a visszalépéshez!   ")
+                        cls()
+            except:
+                input("Helytelen választás!\nPróbáld újra\nEnter a visszalépéshez!   ")
+                cls()
+
+        cls()
+        harcKarakter1BattleChoice = ""
+        print(">>> Harc <<<")
+        while True:
+            print(f"{harcKarakter1.nev} Mit fogsz tenni?")
+            if harcKarakter1.specialUsedLastRound == False:
+                print("Lehetőségek:\n Támadás (1) | Védekezés (2) | Képesség (3) | Képesség infó (4)")
+            else:
+                print("Lehetőségek:\n Támadás (1) | Védekezés (2) | Nem használhatod most a képességed | Képesség infó (4)")
+            try:
+                valasztasHarc = int(input("Válassz!   "))
+                match valasztasHarc:
+                    case 1:
+                        harcKarakter1BattleChoice = "támadás"
+                        break
+                    case 2:
+                        harcKarakter1BattleChoice = "támadás"
+                        break
+                    case 3:
+                        if harcKarakter1.specialUsedLastRound == False:
+                            harcKarakter1BattleChoice = "képesség"
+                            break
+                    case 4:
+                        cls()
+                        print(f"\nKépességed neve: {harcKarakter1.specialName}\nKépesség leírása: {harcKarakter1.special}")
+                        input("Enter a visszalépéshez!   ")
+                        cls()
+            except:
+                input("Helytelen választás!\nPróbáld újra\nEnter a visszalépéshez!   ")
+                cls()
+
+
+    if harcKarakter1BattleChoice == "támadás":
+        if harcKarakter2BattleChoice == "védekezés":
+            pass #nem történik nothing
+        else:
+            if (harcKarakter2.vedekezes + dobas(1,10)) > (harcKarakter1.tamadas + dobas(1,10)):
+                print(f"{harcKarakter1.nev} Sikeresen védekezett! {harcKarakter2.nev} meg sem tudta karcolni!")
+            else:
+                
+
+harc(karakter1, karakter2)
+
+
