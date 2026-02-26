@@ -84,11 +84,15 @@ class Karakter():
             elif fegyver == "buzogány"
                 self.fegyverDmg = dobas(2,4,2)
 
-
-        self.tamadas = max(0, self.ero - 10) + self.fegyverAttack 
-        self.vedekezes = max(0, self.ugyesseg - 10) + self.fegyverDefense  
-        self.kezdemenyezes = max(0, self.gyorsasag - 10) + self.fegyverSpeed
-        self.specialUsedLastRound = False
+        def cselekvesDobas(self):
+            if karakterBattleChoice == "támadás"
+                self.tamadas = max(0, self.ero - 10) + self.fegyverAttack 
+            if karakterBattleChoice == "védekezés"
+                self.vedekezes = max(0, self.ugyesseg - 10) + self.fegyverDefense  
+            if karakterBattleChoice == "kezdeményezés"
+                self.kezdemenyezes = max(0, self.gyorsasag - 10) + self.fegyverSpeed
+            if karakterBattleChoice == "képesség"
+                self.specialUsedLastRound = False
        
 karakterekSzama = 0
 def karakterLetrehozas():
