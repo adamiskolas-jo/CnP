@@ -72,14 +72,19 @@ class Karakter():
             self.fegyverAttack = 4
             self.fegyverBuzoganyBlacklist = "tolvaj"
         
-        def fegyverDmg(self):
+        def fegyverDmgDobas(self):
             if fegyver == "kard":
                 self.fegyverDmg = dobas(1,6,3)
-            elif fegyver == "tőr vagy idk"
- self.fegyverDmg = dobas(1,6)
- self.fegyverDmg = dobas(1,4)
- self.fegyverDmg = dobas(2,6)
- self.fegyverDmg = dobas(2,4,2)
+            elif fegyver == "tőr"
+                self.fegyverDmg = dobas(1,6)
+            elif fegyver == "bot"
+                self.fegyverDmg = dobas(1,4)
+            elif fegyver == "pallos"
+                self.fegyverDmg = dobas(2,6)
+            elif fegyver == "buzogány"
+                self.fegyverDmg = dobas(2,4,2)
+
+
         self.tamadas = max(0, self.ero - 10) + self.fegyverAttack 
         self.vedekezes = max(0, self.ugyesseg - 10) + self.fegyverDefense  
         self.kezdemenyezes = max(0, self.gyorsasag - 10) + self.fegyverSpeed
