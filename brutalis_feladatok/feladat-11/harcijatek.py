@@ -16,7 +16,11 @@ class Karakter():
         self.kaszt = kaszt
         self.fegyver = fegyver
         self.hp = 25
-        self.karakterBattleChoice = ""    
+        self.karakterBattleChoice = "" 
+        self.kezdemenyezes = 0
+        self.tamadas = 0
+        self.vedekezes = 0   
+        self.specialUsedLastRound = False
 
         if kaszt == "harcos":
             self.ero = dobas(1, 10, 10)
@@ -90,7 +94,8 @@ class Karakter():
         elif self.fegyver == "buzogány":
             self.fegyverDmg = dobas(2,4,2)
 
-    def cselekvesDobas(self):
+    def cselekvesDobas(self, karakterBattleChoice:str):
+        self.karakterBattleChoice = karakterBattleChoice
         if self.karakterBattleChoice == "támadás":
             self.tamadas = max(0, self.ero - 10) + self.fegyverAttack 
         elif self.karakterBattleChoice == "védekezés":
@@ -104,30 +109,39 @@ karakterekSzama = 0
 def karakterLetrehozas():
     global karakterekSzama
     cls()
-    print(">>>> Karakter Létrehozás <<<<")
-    if karakterekSzama == 0:
-        print("Hozd létre az első karaktert!")
-    else:
-        print("Hozd létre a második karaktert!")
-
-    kivalasztottNev = input("Adj meg egy nevet a karakternek:  ")
+    while True:
+        print(">>>> Karakter Létrehozás <<<<")
+        if karakterekSzama == 0:
+            print("Hozd létre az első karaktert!")
+        else:
+            print("Hozd létre a második karaktert!")
+        kivalasztottNev = input("Adj meg egy nevet a karakternek:  ")
+        if not kivalasztottNev:
+            input("\nNem adtál meg nevet!\nEnter az újrapróbáláshoz!   ")
+            cls()
+        else:
+            break
     while True:
         print(" Válassz egy kasztot!\n  Választható kasztok:")
         print("  1. Harcos\n  2. Tolvaj\n  3. Pap")
-        kivalasztottKaszt = int(input("Add meg a kasztod (1-3):   "))
-        match kivalasztottKaszt:
-            case 1:
-                kivalasztottKaszt = "harcos"
-                break
-            case 2:
-                kivalasztottKaszt = "tolvaj"
-                break
-            case 3:
-                kivalasztottKaszt = "pap"
-                break
-            case _:
-                input("Helytelen kaszt!\nEnter az újrapróbáláshoz")
-                cls()
+        try:
+            kivalasztottKaszt = int(input("Add meg a kasztod (1-3):   "))
+            match kivalasztottKaszt:
+                case 1:
+                    kivalasztottKaszt = "harcos"
+                    break
+                case 2:
+                    kivalasztottKaszt = "tolvaj"
+                    break
+                case 3:
+                    kivalasztottKaszt = "pap"
+                    break
+                case _:
+                    input("\nHelytelen kaszt!\nEnter az újrapróbáláshoz")
+                    cls()
+        except ValueError:
+            input("\nHelytelen kaszt!\nEnter az újrapróbáláshoz")
+            cls()
 
     while True:
         cls()
@@ -195,12 +209,8 @@ def karakterLetrehozas():
     print(f"  Erő: {letrehozottKarakter.ero}")
     print(f"  Gyorsaság: {letrehozottKarakter.gyorsasag}")
     print(f"  Ügyesség: {letrehozottKarakter.ugyesseg}")
-    print(f"  Támadás: {letrehozottKarakter.tamadas}")
-    print(f"  Védekezés: {letrehozottKarakter.vedekezes}")
-    print(f"  Kezdeményezés: {letrehozottKarakter.kezdemenyezes}")
     input("\nFegyver statisztika (ENTER):   ")
     print(f"  Fegyver típusa: {letrehozottKarakter.fegyver}")
-    print(f"  Fegyver Sebzése: {letrehozottKarakter.fegyverDmg}")
     print(f"  Fegyver Védekezése: {letrehozottKarakter.fegyverDefense}")
     print(f"  Fegyver Gyorsasága: {letrehozottKarakter.fegyverSpeed}")
     print(f"  Fegyver Támadása: {letrehozottKarakter.fegyverAttack}")
@@ -214,6 +224,8 @@ karakter2 = karakterLetrehozas()
 
 def harc(harcKarakter1:object, harcKarakter2:object):
     cls()
+    harcKarakter1.cselekvesDobas("kezdeményezés")
+    harcKarakter2.cselekvesDobas("kezdeményezés")
     if (harcKarakter1.kezdemenyezes + dobas(1,10)) > (harcKarakter2.kezdemenyezes + dobas(1,10)):
         print(">>> Harc <<<")
         while True:
@@ -344,10 +356,28 @@ def harc(harcKarakter1:object, harcKarakter2:object):
 
     if karakter1.karakterBattleChoice == "támadás":
         if karakter2.karakterBattleChoice == "védekezés":
-            pass #nem történik nothing
+            print(f"{harcKarakter1.nev} támadott, de {harcKarakter2.nev} sikeresen védekezett!")
         else:
-            if (harcKarakter2.vedekezes + dobas(1,10)) > (harcKarakter1.tamadas + dobas(1,10)):
-                print(f"{harcKarakter1.nev} Sikeresen védekezett! {harcKarakter2.nev} meg sem tudta karcolni!")
+
+            #HarcKarakter1 cuccai
+            harcKarakter1.cselekvesDobas("támadás")
+            harcKarakter1.cselekvesDobas("védekezés")
+
+            harcKarakter1.tamadas += dobas(1,10) 
+            harcKarakter1.vedekezes += dobas(1,10)
+
+            #HarcKarakter2 cuccai
+            harcKarakter2.cselekvesDobas("támadás")
+            harcKarakter2.cselekvesDobas("védekezés")
+
+            harcKarakter2.tamadas += dobas(1,10) 
+            harcKarakter2.vedekezes += dobas(1,10)
+            
+            # debugginghoz kell ne töröld Tomi köszi puszi
+            print(f"{harcKarakter1.nev} támadása: {harcKarakter1.tamadas} | Védekezése: {harcKarakter1.vedekezes}\n{harcKarakter2.nev} Támadása: {harcKarakter2.tamadas} | Védekezése: {harcKarakter2.vedekezes}")
+
+            if harcKarakter2.vedekezes > harcKarakter1.tamadas:
+                print(f"{harcKarakter2.nev} Sikeresen védekezett! {harcKarakter1.nev} meg sem tudta karcolni!")
                 
 
 harc(karakter1, karakter2)
